@@ -1,0 +1,225 @@
+/**
+ * LearnSpace - Homeschool Co-Op & Resource Center
+ * Classes & Curriculum Styles
+ */
+
+/* Class Card */
+.class-card {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-card-bg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  transition: all var(--transition-normal);
+  height: 100%;
+}
+
+.class-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-xl);
+  border-color: var(--color-border-hover);
+}
+
+.class-card-media {
+  position: relative;
+  height: 200px;
+  overflow: hidden;
+  background-color: var(--color-navy);
+}
+
+.class-card-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--transition-normal);
+}
+
+.class-card:hover .class-card-media img {
+  transform: scale(1.05);
+}
+
+.class-badge-overlay {
+  position: absolute;
+  top: var(--spacing-3);
+  left: var(--spacing-3);
+  z-index: 2;
+}
+
+.class-card-content {
+  padding: var(--spacing-6);
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.class-category-tag {
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-primary);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: var(--spacing-2);
+}
+
+.class-card-title {
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-text-main);
+  margin-bottom: var(--spacing-2);
+  line-height: var(--line-height-tight);
+}
+
+.class-card-title a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.class-card-title a:hover {
+  color: var(--color-primary);
+}
+
+.class-card-desc {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-secondary);
+  line-height: var(--line-height-normal);
+  margin-bottom: var(--spacing-4);
+  flex-grow: 1;
+}
+
+.class-meta-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-2);
+  padding: var(--spacing-3) 0;
+  border-top: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+  margin-bottom: var(--spacing-4);
+  font-size: var(--font-size-xs);
+  color: var(--color-text-secondary);
+}
+
+.class-meta-item {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-2);
+}
+
+.class-meta-item svg {
+  width: 14px;
+  height: 14px;
+  color: var(--color-primary);
+  flex-shrink: 0;
+}
+
+.class-capacity-bar-wrapper {
+  margin-bottom: var(--spacing-4);
+}
+
+.class-capacity-header {
+  display: flex;
+  justify-content: space-between;
+  font-size: var(--font-size-xs);
+  color: var(--color-text-secondary);
+  margin-bottom: 4px;
+}
+
+.class-capacity-bar {
+  height: 6px;
+  background-color: var(--color-bg-tertiary);
+  border-radius: var(--radius-full);
+  overflow: hidden;
+}
+
+.class-capacity-fill {
+  height: 100%;
+  background-color: var(--color-primary);
+  border-radius: var(--radius-full);
+}
+
+.class-capacity-fill.high {
+  background-color: var(--color-warning);
+}
+
+.class-card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: auto;
+}
+
+.class-tuition {
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-extrabold);
+  color: var(--color-text-main);
+}
+
+/* Class Details View */
+.class-detail-header-grid {
+  display: grid;
+  grid-template-columns: 1fr 360px;
+  gap: var(--spacing-10);
+  align-items: start;
+  margin-bottom: var(--spacing-12);
+}
+
+.class-hero-img-box {
+  border-radius: var(--radius-2xl);
+  overflow: hidden;
+  border: 1px solid var(--color-border);
+  box-shadow: var(--shadow-lg);
+  margin-bottom: var(--spacing-8);
+}
+
+.class-hero-img-box img {
+  width: 100%;
+  height: auto;
+}
+
+.enrollment-sidebar-card {
+  background-color: var(--color-card-bg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-2xl);
+  padding: var(--spacing-8);
+  box-shadow: var(--shadow-xl);
+  position: sticky;
+  top: calc(var(--navbar-height) + var(--spacing-6));
+}
+
+.enrollment-price-tag {
+  font-size: var(--font-size-3xl);
+  font-weight: var(--font-weight-extrabold);
+  color: var(--color-primary);
+  margin-bottom: var(--spacing-1);
+}
+
+.enrollment-price-sub {
+  font-size: var(--font-size-xs);
+  color: var(--color-text-muted);
+  margin-bottom: var(--spacing-6);
+}
+
+.syllabus-week-item {
+  display: flex;
+  gap: var(--spacing-4);
+  padding: var(--spacing-4) 0;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.syllabus-week-num {
+  font-weight: var(--font-weight-extrabold);
+  color: var(--color-primary);
+  font-size: var(--font-size-sm);
+  min-width: 65px;
+}
+
+.syllabus-week-text h5 {
+  font-size: var(--font-size-base);
+  margin-bottom: 2px;
+}
+
+.syllabus-week-text p {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-secondary);
+}

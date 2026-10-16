@@ -1,0 +1,198 @@
+/**
+ * LearnSpace - Homeschool Co-Op & Resource Center
+ * Authentication Pages Styles (Login, Register, Forgot Password, Reset, Verify)
+ */
+
+.auth-card {
+  width: 100%;
+  max-width: 460px;
+  background-color: var(--color-card-bg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-2xl);
+  padding: var(--spacing-8) var(--spacing-10);
+  box-shadow: var(--shadow-xl);
+}
+
+.auth-header {
+  text-align: center;
+  margin-bottom: var(--spacing-8);
+}
+
+.auth-logo {
+  display: inline-block;
+  margin-bottom: var(--spacing-4);
+}
+
+.auth-title {
+  font-size: var(--font-size-2xl);
+  font-weight: var(--font-weight-extrabold);
+  color: var(--color-text-main);
+  margin-bottom: var(--spacing-2);
+}
+
+.auth-subtitle {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-secondary);
+}
+
+/* Auth Feedback Alert Banners */
+.auth-banner {
+  padding: var(--spacing-4) var(--spacing-5);
+  border-radius: var(--radius-lg);
+  font-size: var(--font-size-sm);
+  margin-bottom: var(--spacing-6);
+  display: none;
+  align-items: center;
+  gap: var(--spacing-3);
+  line-height: 1.4;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.auth-banner.visible {
+  display: flex;
+}
+
+.auth-banner-success {
+  background-color: var(--color-success-bg);
+  border: 1px solid var(--color-success-border);
+  color: var(--color-success-text);
+  font-weight: var(--font-weight-semibold);
+}
+
+.auth-banner-error {
+  background-color: var(--color-error-bg);
+  border: 1px solid var(--color-error-border);
+  color: var(--color-error-text);
+}
+
+.auth-banner-info {
+  background-color: var(--color-info-bg);
+  border: 1px solid var(--color-info-border);
+  color: var(--color-info-text);
+}
+
+.demo-credentials-pill {
+  background-color: var(--color-primary-light);
+  border: 1px dashed var(--color-primary);
+  border-radius: var(--radius-md);
+  padding: var(--spacing-3) var(--spacing-4);
+  margin-bottom: var(--spacing-6);
+  font-size: var(--font-size-xs);
+  color: var(--color-text-main);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--spacing-2);
+}
+
+.demo-credentials-pill button {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  padding: 0.25rem 0.5rem;
+  border-radius: var(--radius-sm);
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-semibold);
+}
+
+.auth-footer {
+  text-align: center;
+  margin-top: var(--spacing-8);
+  padding-top: var(--spacing-6);
+  border-top: 1px solid var(--color-border);
+  font-size: var(--font-size-sm);
+  color: var(--color-text-secondary);
+}
+
+.auth-footer a {
+  font-weight: var(--font-weight-semibold);
+}
+
+/* OTP Code Inputs */
+.otp-inputs-grid {
+  display: flex;
+  justify-content: center;
+  gap: var(--spacing-3);
+  margin: var(--spacing-6) 0;
+}
+
+.otp-box {
+  width: 48px;
+  height: 54px;
+  text-align: center;
+  font-size: var(--font-size-2xl);
+  font-weight: var(--font-weight-bold);
+  border: 2px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  background-color: var(--color-bg-secondary);
+  color: var(--color-text-main);
+}
+
+.otp-box:focus {
+  border-color: var(--color-primary);
+  background-color: var(--color-card-bg);
+  box-shadow: 0 0 0 3px var(--color-primary-focus);
+}
+
+/* Standalone Auth Screen Layout */
+.auth-standalone-wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-bg-secondary);
+  background-image: radial-gradient(circle at 15% 15%, rgba(37, 99, 235, 0.05) 0%, transparent 40%),
+                    radial-gradient(circle at 85% 85%, rgba(59, 130, 246, 0.06) 0%, transparent 45%);
+}
+
+[data-theme="dark"] .auth-standalone-wrapper {
+  background-image: radial-gradient(circle at 15% 15%, rgba(37, 99, 235, 0.12) 0%, transparent 45%),
+                    radial-gradient(circle at 85% 85%, rgba(59, 130, 246, 0.14) 0%, transparent 50%);
+}
+
+.auth-top-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--spacing-4) var(--spacing-8);
+  width: 100%;
+}
+
+.auth-back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--spacing-2);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-text-secondary);
+  text-decoration: none;
+  padding: 0.45rem 0.9rem;
+  border-radius: var(--radius-md);
+  transition: all var(--transition-fast);
+}
+
+.auth-back-link:hover {
+  color: var(--color-primary);
+  background-color: var(--color-card-bg);
+  box-shadow: var(--shadow-sm);
+}
+
+.auth-top-controls {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-3);
+}
+
+.auth-center-content {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--spacing-6) var(--spacing-4);
+  width: 100%;
+}
+
+.auth-bottom-bar {
+  padding: var(--spacing-4) var(--spacing-6);
+  text-align: center;
+  font-size: var(--font-size-xs);
+  color: var(--color-text-muted);
+}

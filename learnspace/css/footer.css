@@ -1,0 +1,196 @@
+/**
+ * LearnSpace - Homeschool Co-Op & Resource Center
+ * Footer Styles
+ */
+
+.site-footer {
+  background-color: var(--color-footer-bg);
+  color: var(--color-footer-text);
+  border-top: 1px solid var(--color-footer-border);
+  padding-top: var(--spacing-16);
+  padding-bottom: var(--spacing-8);
+  margin-top: auto;
+}
+
+.footer-top-newsletter {
+  background-color: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: var(--radius-2xl);
+  padding: var(--spacing-8) var(--spacing-10);
+  margin-bottom: var(--spacing-16);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--spacing-8);
+  flex-wrap: wrap;
+}
+
+.newsletter-info h3 {
+  color: var(--color-white);
+  font-size: var(--font-size-2xl);
+  margin-bottom: var(--spacing-1);
+}
+
+.newsletter-info p {
+  color: var(--color-footer-subtext);
+  margin: 0;
+}
+
+.newsletter-form {
+  display: flex;
+  gap: var(--spacing-3);
+  max-width: 440px;
+  width: 100%;
+}
+
+.newsletter-input {
+  flex: 1;
+  background-color: rgba(255, 255, 255, 0.07);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: var(--radius-md);
+  padding: 0.75rem 1rem;
+  color: var(--color-white);
+  font-size: var(--font-size-sm);
+  transition: all var(--transition-fast);
+}
+
+.newsletter-input:focus {
+  background-color: rgba(255, 255, 255, 0.12);
+  border-color: var(--color-accent);
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1.6fr 1fr 1fr 1fr 1.2fr;
+  gap: var(--spacing-10);
+  margin-bottom: var(--spacing-16);
+}
+
+.footer-brand p {
+  color: var(--color-footer-subtext);
+  margin-top: var(--spacing-4);
+  margin-bottom: var(--spacing-6);
+  font-size: var(--font-size-sm);
+  line-height: var(--line-height-relaxed);
+}
+
+.footer-socials {
+  display: flex;
+  gap: var(--spacing-3);
+}
+
+.social-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: var(--radius-md);
+  background-color: rgba(255, 255, 255, 0.06);
+  color: var(--color-footer-subtext);
+  transition: all var(--transition-fast);
+}
+
+.social-link:hover {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  transform: translateY(-2px);
+}
+
+.social-link svg {
+  width: 18px;
+  height: 18px;
+  display: block;
+  transition: transform var(--transition-fast);
+}
+
+.social-link:hover svg {
+  transform: scale(1.1);
+}
+
+.footer-col-title {
+  color: var(--color-white);
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-bold);
+  margin-bottom: var(--spacing-5);
+  position: relative;
+  padding-bottom: var(--spacing-2);
+}
+
+.footer-col-title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 24px;
+  height: 2px;
+  background-color: var(--color-primary);
+  border-radius: var(--radius-full);
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-3);
+}
+
+.footer-link {
+  color: var(--color-footer-subtext);
+  font-size: var(--font-size-sm);
+  transition: all var(--transition-fast);
+  text-decoration: none;
+}
+
+.footer-link:hover {
+  color: var(--color-white);
+  transform: translateX(4px);
+}
+
+.footer-contact-item {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--spacing-3);
+  color: var(--color-footer-subtext);
+  font-size: var(--font-size-sm);
+  margin-bottom: var(--spacing-3);
+}
+
+.footer-contact-item svg {
+  flex-shrink: 0;
+  width: 18px;
+  height: 18px;
+  margin-top: 2px;
+  color: var(--color-accent);
+}
+
+/* Bottom Bar */
+.footer-bottom {
+  padding-top: var(--spacing-8);
+  border-top: 1px solid var(--color-footer-border);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: var(--spacing-4);
+  font-size: var(--font-size-xs);
+  color: var(--color-footer-subtext);
+}
+
+.footer-bottom-links {
+  display: flex;
+  gap: var(--spacing-6);
+}
+
+.footer-bottom-links a {
+  color: var(--color-footer-subtext);
+}
+
+.footer-bottom-links a:hover {
+  color: var(--color-white);
+}
+
+.footer-preferences {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-4);
+}

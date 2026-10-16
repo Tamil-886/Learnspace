@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign In to Your Account – LearnSpace</title>
+  <link rel="icon" type="image/svg+xml" href="../assets/images/logo/favicon.svg">
+  <link rel="stylesheet" href="../css/variables.css">
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/layout.css">
+  <link rel="stylesheet" href="../css/components.css">
+  <link rel="stylesheet" href="../css/navigation.css">
+  <link rel="stylesheet" href="../css/footer.css">
+  <link rel="stylesheet" href="../css/home.css">
+  <link rel="stylesheet" href="../css/pages.css">
+  <link rel="stylesheet" href="../css/classes.css">
+  <link rel="stylesheet" href="../css/auth.css">
+  <link rel="stylesheet" href="../css/dashboard.css">
+  <link rel="stylesheet" href="../css/theme.css">
+  <link rel="stylesheet" href="../css/rtl.css">
+  <link rel="stylesheet" href="../css/responsive.css">
+  <link rel="stylesheet" href="../css/animations.css">
+  <!-- Pre-apply theme & text direction immediately to prevent flash -->
+  <script src="../js/theme.js"></script>
+  <script src="../js/direction.js"></script>
+</head>
+<body>
+  <div class="auth-standalone-wrapper">
+    <!-- Standalone Top Utility Bar -->
+    <header class="auth-top-bar">
+      <a href="../index.html" class="auth-back-link" title="Return to Home">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg>
+        <span>Back to Home</span>
+      </a>
+
+      <div class="auth-top-controls">
+        <!-- Theme Toggle -->
+        <button class="theme-toggle-btn" aria-label="Toggle dark/light theme" title="Toggle Theme">
+          <svg class="sun-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+          <svg class="moon-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+
+        <!-- Direction Toggle -->
+        <button class="dir-toggle-btn" aria-label="Toggle text direction" title="Toggle LTR/RTL">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="8 17 12 21 16 17"/><polyline points="8 7 12 3 16 7"/><line x1="12" y1="3" x2="12" y2="21"/></svg> <span class="dir-label">RTL</span>
+        </button>
+      </div>
+    </header>
+
+    <main class="auth-center-content">
+      <div class="auth-card animate-fade-in">
+        <div class="auth-header">
+          <a href="../index.html" class="auth-logo">
+            <img src="../assets/images/logo/logo.svg" alt="LearnSpace" style="height: 44px;" class="logo-img-dark" />
+            <img src="../assets/images/logo/logo-light.svg" alt="LearnSpace" style="height: 44px; display: none;" class="logo-img-light" />
+          </a>
+          <h1 class="auth-title">Parent Member Login</h1>
+          <p class="auth-subtitle">Sign in to access your family dashboard, schedules, and class registrations.</p>
+        </div>
+
+        <!-- In-Place Feedback Banner (Success / Error) -->
+        <div id="login-feedback-banner" class="auth-banner" role="alert"></div>
+
+        <form id="login-form" novalidate>
+          <div class="form-group">
+            <label for="login-email" class="form-label">Email Address</label>
+            <div class="input-icon-wrapper">
+              <svg class="input-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+              <input type="email" id="login-email" class="form-control" placeholder="parent@learnspace.org" required autocomplete="email" />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+              <label for="login-password" class="form-label" style="margin-bottom: 0;">Password</label>
+              <a href="forgot-password.html" style="font-size: 0.75rem;">Forgot password?</a>
+            </div>
+            <div class="input-icon-wrapper">
+              <svg class="input-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+              </svg>
+              <input type="password" id="login-password" class="form-control" placeholder="••••••••" required autocomplete="current-password" />
+              <button type="button" class="password-toggle-btn" aria-label="Toggle password visibility">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                  <circle cx="12" cy="12" r="3"></circle>
+                </svg>
+              </button>
+            </div>
+          </div>
+
+          <div class="form-group" style="display: flex; align-items: center; justify-content: space-between;">
+            <label style="display: flex; align-items: center; gap: 8px; font-size: 0.875rem; cursor: pointer;">
+              <input type="checkbox" id="login-remember" />
+              <span>Remember this device</span>
+            </label>
+          </div>
+
+          <button type="submit" id="btn-login-submit" class="btn btn-primary btn-block btn-lg" style="margin-top: 10px;">
+            Log In to Account
+          </button>
+        </form>
+
+        <div class="auth-footer">
+          New to our co-op? <a href="register.html">Apply for membership</a>
+        </div>
+      </div>
+    </main>
+
+    <!-- Minimal Bottom Bar -->
+    <footer class="auth-bottom-bar">
+      &copy; <span class="current-year">2026</span> LearnSpace Homeschool Co-Op &amp; Resource Center. All rights reserved.
+    </footer>
+  </div>
+
+  <!-- Scripts -->
+  <script src="../js/storage.js"></script>
+  <script src="../js/validation.js"></script>
+  <script src="../js/main.js"></script>
+  <script src="../js/auth.js"></script>
+</body>
+</html>

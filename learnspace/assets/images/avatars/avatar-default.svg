@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" width="300" height="300">
+  <defs>
+    <linearGradient id="avGrad_LS" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2563EB"/>
+      <stop offset="100%" stop-color="#0F172A"/>
+    </linearGradient>
+  </defs>
+  <rect width="300" height="300" rx="30" fill="url(#avGrad_LS)"/>
+  <!-- Decorative subtle shapes -->
+  <circle cx="150" cy="110" r="55" fill="#FFFFFF" fill-opacity="0.15"/>
+  <circle cx="150" cy="110" r="45" fill="#FFFFFF"/>
+  <path d="M75 250 C75 190 225 190 225 250 Z" fill="#FFFFFF"/>
+  <!-- Initials overlay badge -->
+  <circle cx="230" cy="65" r="30" fill="#2563EB" stroke="#FFFFFF" stroke-width="3"/>
+  <text x="230" y="73" font-family="'Inter', sans-serif" font-size="18" font-weight="800" fill="#FFFFFF" text-anchor="middle">LS</text>
+  <!-- Name plate at bottom -->
+  <rect x="20" y="220" width="260" height="65" rx="16" fill="#0F172A" fill-opacity="0.9"/>
+  <text x="150" y="247" font-family="'Inter', sans-serif" font-size="15" font-weight="700" fill="#FFFFFF" text-anchor="middle">Parent Member</text>
+  <text x="150" y="268" font-family="'Inter', sans-serif" font-size="12" font-weight="500" fill="#60A5FA" text-anchor="middle">LearnSpace Family</text>
+</svg>

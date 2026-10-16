@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Homeschool Guides & Teaching Insights – LearnSpace</title>
+  <link rel="icon" type="image/svg+xml" href="../assets/images/logo/favicon.svg">
+  <link rel="stylesheet" href="../css/variables.css">
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/layout.css">
+  <link rel="stylesheet" href="../css/components.css">
+  <link rel="stylesheet" href="../css/navigation.css">
+  <link rel="stylesheet" href="../css/footer.css">
+  <link rel="stylesheet" href="../css/home.css">
+  <link rel="stylesheet" href="../css/pages.css">
+  <link rel="stylesheet" href="../css/classes.css">
+  <link rel="stylesheet" href="../css/auth.css">
+  <link rel="stylesheet" href="../css/dashboard.css">
+  <link rel="stylesheet" href="../css/theme.css">
+  <link rel="stylesheet" href="../css/rtl.css">
+  <link rel="stylesheet" href="../css/responsive.css">
+  <link rel="stylesheet" href="../css/animations.css">
+  <!-- Pre-apply theme & text direction immediately to prevent flash -->
+  <script src="../js/theme.js"></script>
+  <script src="../js/direction.js"></script>
+</head>
+<body>
+<header class="navbar">
+    <div class="container navbar-container">
+      <a href="../index.html" class="navbar-brand">
+        <img src="../assets/images/logo/logo.svg" alt="LearnSpace Homeschool Co-Op" class="logo-img-dark" />
+        <img src="../assets/images/logo/logo-light.svg" alt="LearnSpace Homeschool Co-Op" class="logo-img-light" style="display:none;" />
+      </a>
+
+      <nav class="navbar-nav">
+        <div class="nav-item nav-dropdown">
+          <a href="#" class="nav-link ">
+            Home <svg class="dropdown-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          </a>
+          <div class="dropdown-menu">
+            <a href="../index.html" class="dropdown-item">Home 1 – Co-Op Community</a>
+            <a href="../home-2.html" class="dropdown-item">Home 2 – Interactive Discovery</a>
+          </div>
+        </div>
+
+        <div class="nav-item">
+          <a href="../pages/about.html" class="nav-link ">About</a>
+        </div>
+
+        <div class="nav-item">
+          <a href="../pages/how-it-works.html" class="nav-link ">How It Works</a>
+        </div>
+
+        <div class="nav-item nav-dropdown">
+          <a href="#" class="nav-link ">
+            Academics <svg class="dropdown-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          </a>
+          <div class="dropdown-menu">
+            <a href="../pages/classes.html" class="dropdown-item">Browse Classes</a>
+            <a href="../pages/instructors.html" class="dropdown-item">Our Instructors</a>
+            <a href="../pages/resources.html" class="dropdown-item">Curriculum & Resource Center</a>
+          </div>
+        </div>
+
+        <div class="nav-item">
+          <a href="../pages/membership.html" class="nav-link ">Membership</a>
+        </div>
+
+        <div class="nav-item nav-dropdown">
+          <a href="#" class="nav-link active">
+            Community <svg class="dropdown-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          </a>
+          <div class="dropdown-menu">
+            <a href="../pages/community.html" class="dropdown-item">Co-Op Life & Committees</a>
+            <a href="../pages/events.html" class="dropdown-item">Events & Park Days</a>
+            <a href="../pages/blog.html" class="dropdown-item">Homeschool Guides & Blog</a>
+            <a href="../pages/testimonials.html" class="dropdown-item">Parent Testimonials</a>
+            <a href="../pages/faq.html" class="dropdown-item">Frequently Asked Questions</a>
+            <a href="../pages/contact.html" class="dropdown-item">Contact & Campus Tour</a>
+          </div>
+        </div>
+
+        <div class="nav-item">
+          <a href="../dashboard/index.html" class="nav-link">
+            Parent Dashboard
+          </a>
+        </div>
+      </nav>
+
+      <div class="navbar-actions">
+        <!-- Theme Toggle -->
+        <button class="theme-toggle-btn" aria-label="Toggle dark/light theme" title="Toggle Theme">
+          <svg class="sun-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+          <svg class="moon-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+
+        <!-- Direction Toggle -->
+        <button class="dir-toggle-btn" aria-label="Toggle text direction" title="Toggle LTR/RTL">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="8 17 12 21 16 17"/><polyline points="8 7 12 3 16 7"/><line x1="12" y1="3" x2="12" y2="21"/></svg> <span class="dir-label">RTL</span>
+        </button>
+
+        <!-- Auth Buttons -->
+        <a href="../auth/login.html" class="btn btn-secondary btn-sm btn-nav-auth">Log In</a>
+        <a href="../auth/register.html" class="btn btn-primary btn-sm btn-nav-auth">Join Co-Op</a>
+
+        <!-- Mobile Drawer Toggle -->
+        <button class="mobile-nav-toggle" aria-label="Open mobile navigation menu">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Offcanvas Drawer -->
+  <div class="mobile-drawer-overlay"></div>
+  <div class="mobile-drawer">
+    <div class="mobile-drawer-header">
+      <img src="../assets/images/logo/logo.svg" alt="LearnSpace" style="height:34px;" class="logo-img-dark" />
+      <img src="../assets/images/logo/logo-light.svg" alt="LearnSpace" style="height:34px; display:none;" class="logo-img-light" />
+      <button class="mobile-drawer-close" aria-label="Close menu" style="background:none; border:none; cursor:pointer;">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+    </div>
+
+    <div class="mobile-drawer-nav">
+      <a href="../index.html" class="mobile-nav-link ">Home 1</a>
+      <a href="../home-2.html" class="mobile-nav-link ">Home 2</a>
+      <a href="../pages/about.html" class="mobile-nav-link ">About Us</a>
+      <a href="../pages/how-it-works.html" class="mobile-nav-link ">How It Works</a>
+      <a href="../pages/classes.html" class="mobile-nav-link ">Classes Catalog</a>
+      <a href="../pages/instructors.html" class="mobile-nav-link ">Faculty & Mentors</a>
+      <a href="../pages/membership.html" class="mobile-nav-link ">Membership Tiers</a>
+      <a href="../pages/resources.html" class="mobile-nav-link ">Resource Center</a>
+      <a href="../pages/community.html" class="mobile-nav-link ">Community & Forums</a>
+      <a href="../pages/events.html" class="mobile-nav-link ">Events & Field Trips</a>
+      <a href="../pages/testimonials.html" class="mobile-nav-link ">Family Testimonials</a>
+      <a href="../pages/blog.html" class="mobile-nav-link active">Homeschool Guides</a>
+      <a href="../pages/faq.html" class="mobile-nav-link ">FAQ</a>
+      <a href="../pages/contact.html" class="mobile-nav-link ">Contact Us</a>
+      <a href="../dashboard/index.html" class="mobile-nav-link">Parent Dashboard</a>
+    </div>
+
+    <div class="mobile-drawer-actions">
+      <div class="mobile-toggles">
+        <button class="theme-toggle-btn" aria-label="Toggle theme">
+          <svg class="sun-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg> <svg class="moon-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+        <button class="dir-toggle-btn" aria-label="Toggle direction">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="8 17 12 21 16 17"/><polyline points="8 7 12 3 16 7"/><line x1="12" y1="3" x2="12" y2="21"/></svg> <span class="dir-label">RTL</span>
+        </button>
+      </div>
+      <a href="../auth/login.html" class="btn btn-secondary btn-block">Log In</a>
+      <a href="../auth/register.html" class="btn btn-primary btn-block">Join the Co-Op</a>
+    </div>
+  </div>
+
+
+  <main>
+    <div class="page-banner">
+      <div class="container page-banner-content">
+        <div class="breadcrumb-trail">
+          <a href="../index.html">Home</a>
+          <span class="separator">/</span>
+          <span class="current">Homeschool Blog</span>
+        </div>
+        <h1 class="page-banner-title">Educational Guides & Co-Op Perspectives</h1>
+        <p class="page-banner-desc">Evidence-based insights, homeschool scheduling frameworks, hands-on STEM tips, and college admissions advice written by veteran educators.</p>
+      </div>
+    </div>
+
+    <section class="section">
+      <div class="container">
+        <!-- Search Articles Bar -->
+        <div class="card" style="padding: 24px; margin-bottom: 32px;">
+          <div class="form-group" style="margin-bottom: 0;">
+            <label class="form-label" for="blog-search-input">Search Articles</label>
+            <input type="text" id="blog-search-input" class="form-control" placeholder="Search by topic, keyword, or author..." />
+          </div>
+        </div>
+
+        <!-- Blog Grid (Populated by blog.js) -->
+        <div class="grid grid-cols-3" id="blog-grid"></div>
+      </div>
+    </section>
+  </main>
+
+  
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top-newsletter">
+        <div class="newsletter-info">
+          <h3>Stay Connected with LearnSpace</h3>
+          <p>Get weekly homeschool curriculum tips, park day invites, and science fair updates.</p>
+        </div>
+        <form class="newsletter-form">
+          <input type="email" class="newsletter-input" placeholder="Enter your family email address..." required />
+          <button type="submit" class="btn btn-primary">Subscribe</button>
+        </form>
+      </div>
+
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="../assets/images/logo/logo-light.svg" alt="LearnSpace Homeschool Co-Op" style="height:44px;" />
+          <p>
+            LearnSpace is a collaborative homeschool cooperative and resource center empowering parent educators through shared teaching, STEM laboratories, rich lending libraries, and lifelong family friendships.
+          </p>
+          <div class="footer-socials">
+            <a href="#" class="social-link" aria-label="Facebook" title="Facebook">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            </a>
+            <a href="#" class="social-link" aria-label="Instagram" title="Instagram">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+            </a>
+            <a href="#" class="social-link" aria-label="YouTube" title="YouTube">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"></path><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02" fill="currentColor"></polygon></svg>
+            </a>
+            <a href="#" class="social-link" aria-label="Podcast" title="Podcast">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"></path><path d="M19 10v2a7 7 0 0 1-14 0v-2"></path><line x1="12" y1="19" x2="12" y2="23"></line><line x1="8" y1="23" x2="16" y2="23"></line></svg>
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Navigation</h4>
+          <div class="footer-links">
+            <a href="../index.html" class="footer-link">Home (Overview)</a>
+            <a href="../home-2.html" class="footer-link">Home (Class Finder)</a>
+            <a href="../pages/about.html" class="footer-link">About Our Co-Op</a>
+            <a href="../pages/how-it-works.html" class="footer-link">How It Works</a>
+            <a href="../pages/membership.html" class="footer-link">Membership Plans</a>
+            <a href="../dashboard/index.html" class="footer-link">Parent Dashboard</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Academics</h4>
+          <div class="footer-links">
+            <a href="../pages/classes.html" class="footer-link">All Classes Catalog</a>
+            <a href="../pages/classes.html?cat=stem" class="footer-link">STEM & Robotics Lab</a>
+            <a href="../pages/classes.html?cat=arts" class="footer-link">Visual & Studio Arts</a>
+            <a href="../pages/classes.html?cat=humanities" class="footer-link">Classical Literature</a>
+            <a href="../pages/classes.html?cat=nature" class="footer-link">Nature Study Ecology</a>
+            <a href="../pages/instructors.html" class="footer-link">Educators & Mentors</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Resources</h4>
+          <div class="footer-links">
+            <a href="../pages/resources.html" class="footer-link">Curriculum Library</a>
+            <a href="../pages/resources.html?format=kit" class="footer-link">Science Kit Lending</a>
+            <a href="../pages/events.html" class="footer-link">Calendar & Field Trips</a>
+            <a href="../pages/testimonials.html" class="footer-link">Parent Stories</a>
+            <a href="../pages/blog.html" class="footer-link">Homeschool Articles</a>
+            <a href="../pages/faq.html" class="footer-link">FAQ & Policies</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Campus & Hours</h4>
+          <div class="footer-contact-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span>742 Innovation Way, Oakwood Co-Op Campus</span>
+          </div>
+          <div class="footer-contact-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            <span>(555) 382-9100</span>
+          </div>
+          <div class="footer-contact-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            <span>Co-Op Hours: Mon–Fri, 8:30 AM – 4:30 PM</span>
+          </div>
+          <div style="margin-top: 14px;">
+            <a href="../pages/contact.html" class="btn btn-outline btn-sm" style="color:var(--color-white)!important; border-color:rgba(255,255,255,0.3);">Schedule a Tour</a>
+          </div>
+        </div>
+      </div></div>
+  </footer>
+
+  
+  <script src="../data/classes.js"></script><script src="../data/instructors.js"></script><script src="../data/resources.js"></script><script src="../data/events.js"></script><script src="../data/blog-posts.js"></script><script src="../js/storage.js"></script><script src="../js/validation.js"></script><script src="../js/search-filter.js"></script><script src="../js/navigation.js"></script><script src="../js/responsive-menu.js"></script><script src="../js/main.js"></script><script src="../js/blog.js"></script>
+</body>
+</html>

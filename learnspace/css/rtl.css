@@ -1,0 +1,116 @@
+/**
+ * LearnSpace - Homeschool Co-Op & Resource Center
+ * RTL (Right-to-Left) Stylesheet
+ */
+
+[dir="rtl"] {
+  direction: rtl;
+  text-align: right;
+}
+
+[dir="rtl"] .text-left { text-align: right !important; }
+[dir="rtl"] .text-right { text-align: left !important; }
+
+/* Navbar reversals */
+[dir="rtl"] .dropdown-menu {
+  left: auto;
+  right: 0;
+}
+
+[dir="rtl"] .dropdown-item:hover {
+  transform: translateX(-4px);
+}
+
+[dir="rtl"] .mobile-drawer {
+  right: auto;
+  left: -320px;
+}
+
+[dir="rtl"] .mobile-drawer.open {
+  transform: translateX(320px);
+}
+
+/* Form input icon */
+[dir="rtl"] .input-icon-wrapper .form-control {
+  padding-left: 0.95rem;
+  padding-right: 2.75rem;
+}
+
+[dir="rtl"] .input-icon-wrapper .input-icon {
+  left: auto;
+  right: 0.95rem;
+}
+
+[dir="rtl"] .password-toggle-btn {
+  right: auto;
+  left: 0.75rem;
+}
+
+/* Dashboard Sidebar reversals */
+[dir="rtl"] .dashboard-sidebar {
+  left: auto;
+  right: 0;
+  border-right: none;
+  border-left: 1px solid var(--color-sidebar-border);
+}
+
+[dir="rtl"] .dashboard-main {
+  margin-left: 0;
+  margin-right: var(--sidebar-width);
+}
+
+/* Trust avatars negative margin */
+[dir="rtl"] .trust-avatar {
+  margin-left: 0;
+  margin-right: -8px;
+}
+
+[dir="rtl"] .trust-avatar:first-child {
+  margin-right: 0;
+}
+
+/* Schedule block borders */
+[dir="rtl"] .schedule-event-block {
+  border-left: 1px solid var(--color-border);
+  border-right: 4px solid var(--color-primary);
+}
+
+[dir="rtl"] .schedule-event-block.art {
+  border-right-color: #8B5CF6;
+}
+
+[dir="rtl"] .schedule-event-block.math {
+  border-right-color: #0284C7;
+}
+
+/* Messages panel */
+[dir="rtl"] .messages-thread-list {
+  border-right: none;
+  border-left: 1px solid var(--color-border);
+}
+
+[dir="rtl"] .chat-bubble.incoming {
+  border-bottom-left-radius: var(--radius-lg);
+  border-bottom-right-radius: var(--radius-xs);
+}
+
+[dir="rtl"] .chat-bubble.outgoing {
+  border-bottom-right-radius: var(--radius-lg);
+  border-bottom-left-radius: var(--radius-xs);
+}
+
+/* Footer elements */
+[dir="rtl"] .footer-col-title::after {
+  left: auto;
+  right: 0;
+}
+
+[dir="rtl"] .footer-link:hover {
+  transform: translateX(-4px);
+}
+
+/* Auth back link arrow */
+[dir="rtl"] .auth-back-link svg {
+  transform: rotate(180deg);
+}
+

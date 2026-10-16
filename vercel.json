@@ -1,0 +1,18 @@
+{
+  "cleanUrls": false,
+  "trailingSlash": false,
+  "rewrites": [
+    {
+      "source": "/",
+      "destination": "/learnspace/index.html"
+    },
+    {
+      "source": "/learnspace",
+      "destination": "/learnspace/index.html"
+    },
+    {
+      "source": "/((?!learnspace/).*)",
+      "destination": "/learnspace/$1"
+    }
+  ]
+}

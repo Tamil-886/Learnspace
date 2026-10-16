@@ -1,0 +1,101 @@
+/**
+ * LearnSpace - Homeschool Co-Op & Resource Center
+ * Theme Switcher Styles (Light & Dark Mode)
+ */
+
+/* Theme Toggle Button */
+.theme-toggle-btn {
+  background: none;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  width: 38px;
+  height: 38px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-text-main);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.theme-toggle-btn:hover {
+  background-color: var(--color-bg-tertiary);
+  color: var(--color-primary);
+  border-color: var(--color-border-hover);
+}
+
+.theme-toggle-btn .sun-icon {
+  display: none;
+}
+
+.theme-toggle-btn .moon-icon {
+  display: block;
+}
+
+[data-theme="dark"] .theme-toggle-btn .sun-icon {
+  display: block;
+}
+
+[data-theme="dark"] .theme-toggle-btn .moon-icon {
+  display: none;
+}
+
+/* Logo Theme Switching */
+[data-theme="dark"] .logo-img-dark {
+  display: none !important;
+}
+
+[data-theme="dark"] .logo-img-light {
+  display: block !important;
+}
+
+[data-theme="light"] .logo-img-dark,
+:root:not([data-theme="dark"]) .logo-img-dark {
+  display: block !important;
+}
+
+[data-theme="light"] .logo-img-light,
+:root:not([data-theme="dark"]) .logo-img-light {
+  display: none !important;
+}
+
+/* Direction Toggle Button */
+.dir-toggle-btn {
+  background: none;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: 0.35rem 0.65rem;
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-text-main);
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  transition: all var(--transition-fast);
+}
+
+.dir-toggle-btn:hover {
+  background-color: var(--color-bg-tertiary);
+  color: var(--color-primary);
+  border-color: var(--color-border-hover);
+}
+
+/* Dark Mode Scrollbars */
+[data-theme="dark"] ::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+[data-theme="dark"] ::-webkit-scrollbar-track {
+  background: #0B1120;
+}
+
+[data-theme="dark"] ::-webkit-scrollbar-thumb {
+  background: #334155;
+  border-radius: var(--radius-full);
+}
+
+[data-theme="dark"] ::-webkit-scrollbar-thumb:hover {
+  background: #475569;
+}

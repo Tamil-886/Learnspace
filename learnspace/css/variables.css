@@ -1,0 +1,209 @@
+/**
+ * LearnSpace - Homeschool Co-Op & Resource Center
+ * CSS Variables - Black, White, and Blue Design System
+ */
+
+:root {
+  /* Main Colour Palette */
+  --color-primary: #2563EB;
+  --color-primary-hover: #1D4ED8;
+  --color-primary-light: #EFF6FF;
+  --color-primary-focus: rgba(37, 99, 235, 0.25);
+  
+  --color-accent: #3B82F6;
+  --color-accent-light: #DBEAFE;
+  
+  --color-navy: #0F172A;
+  --color-navy-light: #1E293B;
+  
+  --color-black: #000000;
+  --color-white: #FFFFFF;
+  
+  --color-bg-main: #FFFFFF;
+  --color-bg-secondary: #F8FAFC;
+  --color-bg-tertiary: #F1F5F9;
+  
+  --color-card-bg: #FFFFFF;
+  --color-card-hover: #FFFFFF;
+  --color-card-header: #F8FAFC;
+  
+  --color-border: #E2E8F0;
+  --color-border-subtle: #F1F5F9;
+  --color-border-hover: #CBD5E1;
+  
+  --color-text-main: #0F172A;
+  --color-text-secondary: #64748B;
+  --color-text-muted: #94A3B8;
+  --color-text-inverted: #FFFFFF;
+  
+  --color-navbar-bg: #FFFFFF;
+  --color-navbar-border: #E2E8F0;
+  --color-footer-bg: #0F172A;
+  --color-footer-text: #E2E8F0;
+  --color-footer-subtext: #94A3B8;
+  --color-footer-border: #1E293B;
+  
+  --color-sidebar-bg: #FFFFFF;
+  --color-sidebar-border: #E2E8F0;
+  --color-sidebar-text: #1E293B;
+  --color-sidebar-active-bg: #EFF6FF;
+  
+  --color-success: #16A34A;
+  --color-success-bg: #DCFCE7;
+  --color-success-border: #86EFAC;
+  --color-success-text: #15803D;
+
+  --color-warning: #D97706;
+  --color-warning-bg: #FEF3C7;
+  --color-warning-border: #FCD34D;
+  --color-warning-text: #B45309;
+
+  --color-error: #DC2626;
+  --color-error-bg: #FEE2E2;
+  --color-error-border: #FCA5A5;
+  --color-error-text: #B91C1C;
+  
+  --color-info: #0284C7;
+  --color-info-bg: #E0F2FE;
+  --color-info-border: #7DD3FC;
+  --color-info-text: #0369A1;
+
+  /* Typography */
+  --font-family-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  --font-family-mono: 'JetBrains Mono', SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  
+  --font-size-xs: 0.75rem;    /* 12px */
+  --font-size-sm: 0.875rem;   /* 14px */
+  --font-size-base: 1rem;     /* 16px */
+  --font-size-lg: 1.125rem;   /* 18px */
+  --font-size-xl: 1.25rem;    /* 20px */
+  --font-size-2xl: 1.5rem;    /* 24px */
+  --font-size-3xl: 1.875rem;  /* 30px */
+  --font-size-4xl: 2.25rem;   /* 36px */
+  --font-size-5xl: 3rem;      /* 48px */
+  --font-size-6xl: 3.75rem;   /* 60px */
+
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --font-weight-extrabold: 800;
+
+  --line-height-tight: 1.25;
+  --line-height-normal: 1.5;
+  --line-height-relaxed: 1.7;
+
+  /* Spacing */
+  --spacing-1: 0.25rem;  /* 4px */
+  --spacing-2: 0.5rem;   /* 8px */
+  --spacing-3: 0.75rem;  /* 12px */
+  --spacing-4: 1rem;     /* 16px */
+  --spacing-5: 1.25rem;  /* 20px */
+  --spacing-6: 1.5rem;   /* 24px */
+  --spacing-8: 2rem;     /* 32px */
+  --spacing-10: 2.5rem;  /* 40px */
+  --spacing-12: 3rem;    /* 48px */
+  --spacing-16: 4rem;    /* 64px */
+  --spacing-20: 5rem;    /* 80px */
+  --spacing-24: 6rem;    /* 96px */
+
+  /* Borders & Radius */
+  --radius-xs: 0.25rem;  /* 4px */
+  --radius-sm: 0.375rem; /* 6px */
+  --radius-md: 0.5rem;   /* 8px */
+  --radius-lg: 0.75rem;  /* 12px */
+  --radius-xl: 1rem;     /* 16px */
+  --radius-2xl: 1.5rem;  /* 24px */
+  --radius-full: 9999px;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 2px 0 rgba(15, 23, 42, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(15, 23, 42, 0.07), 0 2px 4px -2px rgba(15, 23, 42, 0.05);
+  --shadow-lg: 0 10px 15px -3px rgba(15, 23, 42, 0.08), 0 4px 6px -4px rgba(15, 23, 42, 0.04);
+  --shadow-xl: 0 20px 25px -5px rgba(15, 23, 42, 0.1), 0 8px 10px -6px rgba(15, 23, 42, 0.05);
+  --shadow-glow: 0 0 20px rgba(37, 99, 235, 0.25);
+
+  /* Layout Containers */
+  --container-max-width: 1240px;
+  --container-narrow-width: 860px;
+  --container-wide-width: 1400px;
+  --navbar-height: 76px;
+  --sidebar-width: 280px;
+
+  /* Transitions */
+  --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-normal: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-slow: 350ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* Z-index layers */
+  --z-dropdown: 1000;
+  --z-sticky: 1020;
+  --z-fixed: 1030;
+  --z-modal-backdrop: 1040;
+  --z-modal: 1050;
+  --z-toast: 1060;
+  --z-tooltip: 1070;
+}
+
+/* Dark Mode Overrides */
+[data-theme="dark"] {
+  --color-primary: #3B82F6;
+  --color-primary-hover: #60A5FA;
+  --color-primary-light: rgba(59, 130, 246, 0.15);
+  --color-primary-focus: rgba(59, 130, 246, 0.35);
+
+  --color-accent: #60A5FA;
+  --color-accent-light: rgba(96, 165, 250, 0.2);
+
+  --color-bg-main: #0B1120;
+  --color-bg-secondary: #0F172A;
+  --color-bg-tertiary: #1E293B;
+
+  --color-card-bg: #111827;
+  --color-card-hover: #172033;
+  --color-card-header: #0F172A;
+
+  --color-border: #334155;
+  --color-border-subtle: #1E293B;
+  --color-border-hover: #475569;
+
+  --color-text-main: #F8FAFC;
+  --color-text-secondary: #CBD5E1;
+  --color-text-muted: #94A3B8;
+  --color-text-inverted: #0F172A;
+
+  --color-navbar-bg: #0F172A;
+  --color-navbar-border: #1E293B;
+  
+  --color-footer-bg: #030712;
+  --color-footer-text: #F8FAFC;
+  --color-footer-subtext: #94A3B8;
+  --color-footer-border: #1F2937;
+
+  --color-sidebar-bg: #0F172A;
+  --color-sidebar-border: #1E293B;
+  --color-sidebar-text: #F8FAFC;
+  --color-sidebar-active-bg: rgba(59, 130, 246, 0.15);
+
+  --color-success-bg: rgba(22, 163, 74, 0.2);
+  --color-success-border: #16A34A;
+  --color-success-text: #4ADE80;
+
+  --color-warning-bg: rgba(217, 119, 6, 0.2);
+  --color-warning-border: #D97706;
+  --color-warning-text: #FBBF24;
+
+  --color-error-bg: rgba(220, 38, 38, 0.2);
+  --color-error-border: #DC2626;
+  --color-error-text: #F87171;
+
+  --color-info-bg: rgba(2, 132, 199, 0.2);
+  --color-info-border: #0284C7;
+  --color-info-text: #38BDF8;
+
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.4);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.5), 0 2px 4px -2px rgba(0, 0, 0, 0.4);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.6), 0 4px 6px -4px rgba(0, 0, 0, 0.4);
+  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.7), 0 8px 10px -6px rgba(0, 0, 0, 0.5);
+  --shadow-glow: 0 0 25px rgba(59, 130, 246, 0.35);
+}
