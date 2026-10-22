@@ -270,6 +270,18 @@
   letter-spacing: 0.2px;
 }
 
+.badge-primary {
+  background-color: var(--color-primary);
+  color: #ffffff;
+  border: 1px solid var(--color-primary);
+}
+
+.badge-secondary {
+  background-color: var(--color-bg-secondary);
+  color: var(--color-text-secondary);
+  border: 1px solid var(--color-border);
+}
+
 .badge-blue {
   background-color: var(--color-primary-light);
   color: var(--color-primary);

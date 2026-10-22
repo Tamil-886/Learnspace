@@ -187,13 +187,25 @@
   position: absolute;
   bottom: 0;
   right: -8px;
+  background-color: var(--color-primary);
+  color: #ffffff;
   font-size: 0.72rem;
-  font-weight: 600;
-  padding: 3px 8px;
+  font-weight: 700;
+  padding: 3px 9px;
   border-radius: var(--radius-full);
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
-  border: 2px solid var(--color-card-bg);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
+  border: 2.5px solid var(--color-card-bg);
   white-space: nowrap;
+  z-index: 2;
+  letter-spacing: 0.2px;
+}
+
+#detail-sidebar-exp-badge {
+  background-color: var(--color-primary);
+  color: #ffffff;
+  border: 2.5px solid var(--color-card-bg);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
+  font-weight: 700;
 }
 
 .home-instructor-media {
