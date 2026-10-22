@@ -303,6 +303,10 @@
   transition: transform 0.25s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.25s ease, border-color 0.2s ease;
   display: flex;
   flex-direction: column;
+  height: auto;
+}
+
+.grid > .card {
   height: 100%;
 }
 
@@ -311,8 +315,13 @@
 }
 
 .card.filter-toolbar-card,
+.filter-toolbar-card,
+.card-filter,
 .card:has(.custom-select-wrapper),
 .card:has(.custom-select-wrapper.open) {
+  height: auto !important;
+  min-height: unset !important;
+  flex: 0 0 auto !important;
   overflow: visible !important;
 }
 

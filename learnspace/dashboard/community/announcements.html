@@ -111,45 +111,196 @@
       </header>
 
       <div class="dashboard-content">
-        
-      <div style="margin-bottom:24px;">
-        <h2 style="font-size:1.5rem; margin-bottom:4px;">Parent Announcements Board</h2>
-        <p style="color:var(--color-text-secondary); font-size:0.875rem;">Official board notices, campus weather alerts, and committee updates.</p>
+      <div class="announcement-board-header">
+        <div>
+          <h2 style="font-size: 1.5rem; margin-bottom: 4px;">Parent Announcements Board</h2>
+          <p style="color: var(--color-text-secondary); font-size: 0.875rem;">Official board notices, campus weather alerts, and committee updates.</p>
+        </div>
+        <div class="announcement-filter-tabs" id="announcement-filters" style="margin-bottom: 0;">
+          <button class="announcement-tab-btn active" data-filter="all">All Notices (3)</button>
+          <button class="announcement-tab-btn" data-filter="urgent">Urgent</button>
+          <button class="announcement-tab-btn" data-filter="resources">Resources</button>
+          <button class="announcement-tab-btn" data-filter="community">Community</button>
+        </div>
       </div>
 
-      <div class="card" style="padding:24px; margin-bottom:16px; border-left:4px solid var(--color-warning);">
-        <div style="display:flex; justify-content:space-between; margin-bottom:8px;">
-          <span class="badge badge-amber">Urgent Deadline</span>
-          <span style="font-size:0.75rem; color:var(--color-text-muted);">October 14, 2026</span>
+      <div class="dash-community-layout">
+        <!-- Main Announcements Feed -->
+        <div class="announcement-feed">
+          <!-- Item 1: Urgent Deadline -->
+          <div class="card announcement-card accent-warning" data-category="urgent">
+            <div class="announcement-header">
+              <div class="announcement-badge-group">
+                <span class="announcement-icon-badge badge-warning" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+                </span>
+                <span class="badge badge-amber">Urgent Deadline</span>
+                <span class="announcement-priority-tag">High Priority</span>
+              </div>
+              <div class="announcement-meta">
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                <span>October 14, 2026</span>
+              </div>
+            </div>
+
+            <h3 class="announcement-title">Annual STEM Expo Project Registration Closes This Friday</h3>
+            
+            <p class="announcement-body">
+              Please register your child's STEM Expo presentation topic and table space requirements before 5:00 PM on Friday, October 18. Dr. Sarah Chen will review safety hazard forms on Monday.
+            </p>
+
+            <div class="announcement-footer">
+              <div class="announcement-author">
+                <img src="../../assets/images/instructors/dr-sarah-chen.jpg" alt="Dr. Sarah Chen" class="avatar" />
+                <div class="author-details">
+                  <strong>Dr. Sarah Chen, Ph.D.</strong>
+                  <span>Academic STEM Director</span>
+                </div>
+              </div>
+              <div class="announcement-actions">
+                <a href="../classes/browse.html" class="btn btn-primary btn-sm">Register Presentation &rarr;</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 2: Resources -->
+          <div class="card announcement-card accent-primary" data-category="resources">
+            <div class="announcement-header">
+              <div class="announcement-badge-group">
+                <span class="announcement-icon-badge badge-primary" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
+                </span>
+                <span class="badge badge-blue">Resources</span>
+                <span class="announcement-priority-tag">Lending Library</span>
+              </div>
+              <div class="announcement-meta">
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                <span>October 11, 2026</span>
+              </div>
+            </div>
+
+            <h3 class="announcement-title">New Compound Light Microscopes Added to Lending Center</h3>
+            
+            <p class="announcement-body">
+              The parent fundraising committee has successfully acquired 4 new compound light microscopes (40x–1000x glass optics). Available for 3-week home checkouts starting tomorrow!
+            </p>
+
+            <div class="announcement-footer">
+              <div class="announcement-author">
+                <img src="../../assets/images/avatars/parent-amanda.jpg" alt="Amanda Brooks" class="avatar" />
+                <div class="author-details">
+                  <strong>Amanda Brooks</strong>
+                  <span>Lending Library Curator</span>
+                </div>
+              </div>
+              <div class="announcement-actions">
+                <a href="../resources/index.html" class="btn btn-outline btn-sm">Reserve Microscope &rarr;</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 3: Community -->
+          <div class="card announcement-card accent-success" data-category="community">
+            <div class="announcement-header">
+              <div class="announcement-badge-group">
+                <span class="announcement-icon-badge badge-success" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                </span>
+                <span class="badge badge-green">Community</span>
+                <span class="announcement-priority-tag">Volunteer Opportunity</span>
+              </div>
+              <div class="announcement-meta">
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                <span>October 8, 2026</span>
+              </div>
+            </div>
+
+            <h3 class="announcement-title">Volunteer Signups Open for November Park Day Cider Station</h3>
+            
+            <p class="announcement-body">
+              The social committee is seeking 3 parent volunteers to help serve warm spiced apple cider and run toddler games at Oakwood Nature Park on November 5th.
+            </p>
+
+            <div class="announcement-footer">
+              <div class="announcement-author">
+                <img src="../../assets/images/avatars/parent-michael.jpg" alt="Michael Thorne" class="avatar" />
+                <div class="author-details">
+                  <strong>Michael Thorne</strong>
+                  <span>Parent Events Coordinator</span>
+                </div>
+              </div>
+              <div class="announcement-actions">
+                <a href="../community/events.html" class="btn btn-outline btn-sm">Volunteer Signup &rarr;</a>
+              </div>
+            </div>
+          </div>
         </div>
-        <h3 style="font-size:1.2rem; margin-bottom:8px;">Annual STEM Expo Project Registration Closes This Friday</h3>
-        <p style="color:var(--color-text-secondary); line-height:1.6; margin:0;">
-          Please register your child's STEM Expo presentation topic and table space requirements before 5:00 PM on Friday, October 18. Dr. Sarah Chen will review safety hazard forms on Monday.
-        </p>
+
+        <!-- Sidebar Column -->
+        <div style="display: flex; flex-direction: column; gap: 18px;">
+          <!-- Card 1: Campus Status -->
+          <div class="card" style="padding: 20px;">
+            <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 12px;">
+              <span style="display: inline-block; width: 10px; height: 10px; border-radius: 50%; background: var(--color-success); box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.2);"></span>
+              <h4 style="font-size: 0.95rem; font-weight: 700; margin: 0; color: var(--color-navy);">Campus Operations</h4>
+            </div>
+            <p style="font-size: 0.825rem; color: var(--color-text-secondary); line-height: 1.5; margin: 0 0 10px 0;">
+              All laboratories, Maker Space workshops, and lending library desks are operating on normal schedule.
+            </p>
+            <div style="font-size: 0.78rem; color: var(--color-text-muted); display: flex; flex-direction: column; gap: 4px; padding-top: 10px; border-top: 1px solid var(--color-border);">
+              <span>⏰ Campus Hours: 8:30 AM – 4:00 PM</span>
+              <span>🌤️ Weather: Mild Autumn · Nature Walks On</span>
+            </div>
+          </div>
+
+          <!-- Card 2: Upcoming Board Meeting -->
+          <div class="card" style="padding: 20px;">
+            <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 10px;">
+              <span style="font-size: 1.25rem;">🏛️</span>
+              <h4 style="font-size: 0.95rem; font-weight: 700; margin: 0; color: var(--color-navy);">Next Parent Board Meeting</h4>
+            </div>
+            <div style="background: var(--color-bg-secondary); padding: 12px; border-radius: var(--radius-md); margin-bottom: 10px;">
+              <strong style="display: block; font-size: 0.85rem; color: var(--color-navy); margin-bottom: 2px;">Thursday, October 22 · 6:30 PM</strong>
+              <span style="font-size: 0.78rem; color: var(--color-text-secondary);">Room 101 & Hybrid Zoom Link</span>
+            </div>
+            <p style="font-size: 0.8rem; color: var(--color-text-secondary); margin: 0;">
+              Agenda: Term 2 lab curriculum budget and vote on spring outdoor field trip destinations.
+            </p>
+          </div>
+
+          <!-- Card 3: Notice Submission -->
+          <div class="card" style="padding: 20px; background: rgba(37, 99, 235, 0.04); border: 1px dashed var(--color-primary);">
+            <h4 style="font-size: 0.92rem; font-weight: 700; margin: 0 0 6px 0; color: var(--color-navy);">Have a Notice to Share?</h4>
+            <p style="font-size: 0.8rem; color: var(--color-text-secondary); margin: 0 0 12px 0;">
+              Parent committee leads and class organizers can submit notices for weekly board approval.
+            </p>
+            <button class="btn btn-outline btn-sm btn-block" onclick="alert('Notice submission portal will open for Term 2 updates on Monday.');">Submit Co-Op Notice</button>
+          </div>
+        </div>
       </div>
 
-      <div class="card" style="padding:24px; margin-bottom:16px; border-left:4px solid var(--color-primary);">
-        <div style="display:flex; justify-content:space-between; margin-bottom:8px;">
-          <span class="badge badge-blue">Resources</span>
-          <span style="font-size:0.75rem; color:var(--color-text-muted);">October 11, 2026</span>
-        </div>
-        <h3 style="font-size:1.2rem; margin-bottom:8px;">New Compound Light Microscopes Added to Lending Center</h3>
-        <p style="color:var(--color-text-secondary); line-height:1.6; margin:0;">
-          The parent fundraising committee has successfully acquired 4 new compound light microscopes (40x–1000x glass optics). Available for 3-week home checkouts starting tomorrow!
-        </p>
-      </div>
+      <script>
+        document.addEventListener('DOMContentLoaded', function () {
+          const filterBtns = document.querySelectorAll('#announcement-filters .announcement-tab-btn');
+          const cards = document.querySelectorAll('.announcement-card');
 
-      <div class="card" style="padding:24px; border-left:4px solid var(--color-success);">
-        <div style="display:flex; justify-content:space-between; margin-bottom:8px;">
-          <span class="badge badge-green">Community</span>
-          <span style="font-size:0.75rem; color:var(--color-text-muted);">October 8, 2026</span>
-        </div>
-        <h3 style="font-size:1.2rem; margin-bottom:8px;">Volunteer Signups Open for November Park Day Cider Station</h3>
-        <p style="color:var(--color-text-secondary); line-height:1.6; margin:0;">
-          The social committee is seeking 3 parent volunteers to help serve warm spiced apple cider and run toddler games at Oakwood Nature Park on November 5th.
-        </p>
-      </div>
-    
+          filterBtns.forEach(btn => {
+            btn.addEventListener('click', function () {
+              filterBtns.forEach(b => b.classList.remove('active'));
+              this.classList.add('active');
+
+              const filter = this.getAttribute('data-filter');
+              cards.forEach(card => {
+                if (filter === 'all' || card.getAttribute('data-category') === filter) {
+                  card.style.display = 'block';
+                } else {
+                  card.style.display = 'none';
+                }
+              });
+            });
+          });
+        });
+      </script>
       </div>
     </div>
   </div>

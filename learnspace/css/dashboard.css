@@ -926,3 +926,282 @@
   visibility: visible;
 }
 
+
+/* ==========================================================================
+   Dashboard Classes & Resource Library Spacing Optimization
+   ========================================================================== */
+.dashboard-content .filter-toolbar-card,
+.dashboard-body .filter-toolbar-card,
+.card.filter-toolbar-card,
+.card-filter {
+  height: auto !important;
+  min-height: unset !important;
+  max-height: none !important;
+  flex: 0 0 auto !important;
+  align-self: stretch !important;
+  padding: 16px 20px !important;
+  margin-bottom: 20px !important;
+}
+
+.dashboard-content .form-group,
+.dashboard-body .form-group {
+  margin-bottom: 0 !important;
+}
+
+/* Compact spacing for dashboard class and resource grids */
+.dashboard-content #classes-grid,
+.dashboard-content #resources-grid {
+  gap: 20px !important;
+  margin-bottom: 24px !important;
+}
+
+.dashboard-content .class-card {
+  height: 100% !important;
+}
+
+.dashboard-content .class-card-media {
+  height: 180px !important;
+}
+
+.dashboard-content .class-card-content {
+  padding: 16px 18px !important;
+}
+
+.dashboard-content .class-card-desc {
+  margin-bottom: 10px !important;
+}
+
+.dashboard-content .class-meta-list {
+  padding: 8px 0 !important;
+  margin-bottom: 10px !important;
+}
+
+.dashboard-content .class-capacity-bar-wrapper {
+  margin-bottom: 10px !important;
+}
+
+.dashboard-content .resource-card {
+  height: 100% !important;
+}
+
+.dashboard-content .resource-media {
+  height: 170px !important;
+}
+
+.dashboard-content .resource-card-body {
+  padding: 16px 18px !important;
+}
+
+.dashboard-content .resource-card-body p {
+  margin-bottom: 10px !important;
+}
+
+
+/* ==========================================================================
+   Announcement Board & Notice Cards Alignment and Design
+   ========================================================================== */
+.announcement-board-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.announcement-feed {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.announcement-card {
+  padding: 22px 24px !important;
+  border-radius: var(--radius-xl) !important;
+  border: 1px solid var(--color-border) !important;
+  background-color: var(--color-card-bg) !important;
+  box-shadow: var(--shadow-sm) !important;
+  transition: transform var(--transition-fast), box-shadow var(--transition-fast), border-color var(--transition-fast) !important;
+  height: auto !important;
+  position: relative;
+  overflow: hidden !important;
+}
+
+.announcement-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md) !important;
+  border-color: var(--color-border-hover) !important;
+}
+
+.announcement-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 5px;
+  border-radius: 4px 0 0 4px;
+}
+
+[dir="rtl"] .announcement-card::before {
+  left: auto;
+  right: 0;
+  border-radius: 0 4px 4px 0;
+}
+
+.announcement-card.accent-warning::before {
+  background-color: var(--color-warning);
+}
+
+.announcement-card.accent-primary::before {
+  background-color: var(--color-primary);
+}
+
+.announcement-card.accent-success::before {
+  background-color: var(--color-success);
+}
+
+.announcement-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 12px;
+  flex-wrap: wrap;
+}
+
+.announcement-badge-group {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.announcement-icon-badge {
+  width: 28px;
+  height: 28px;
+  border-radius: var(--radius-md);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.announcement-icon-badge.badge-warning {
+  background-color: rgba(245, 158, 11, 0.15);
+  color: #D97706;
+}
+
+.announcement-icon-badge.badge-primary {
+  background-color: rgba(37, 99, 235, 0.12);
+  color: #2563EB;
+}
+
+.announcement-icon-badge.badge-success {
+  background-color: rgba(16, 185, 129, 0.15);
+  color: #059669;
+}
+
+.announcement-priority-tag {
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: var(--color-text-muted);
+  background: var(--color-bg-secondary);
+  padding: 3px 8px;
+  border-radius: var(--radius-full);
+  border: 1px solid var(--color-border);
+}
+
+.announcement-meta {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--color-text-muted);
+}
+
+.announcement-title {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--color-navy);
+  margin: 0 0 8px 0;
+  line-height: 1.35;
+}
+
+.announcement-body {
+  font-size: 0.88rem;
+  color: var(--color-text-secondary);
+  line-height: 1.6;
+  margin: 0 0 16px 0;
+}
+
+.announcement-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding-top: 14px;
+  border-top: 1px solid var(--color-border);
+  flex-wrap: wrap;
+}
+
+.announcement-author {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.announcement-author .avatar {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1.5px solid var(--color-border);
+}
+
+.announcement-author .author-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.announcement-author .author-details strong {
+  font-size: 0.825rem;
+  color: var(--color-text-main);
+  line-height: 1.2;
+}
+
+.announcement-author .author-details span {
+  font-size: 0.72rem;
+  color: var(--color-text-muted);
+}
+
+.announcement-filter-tabs {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.announcement-tab-btn {
+  padding: 6px 14px;
+  border-radius: var(--radius-full);
+  font-size: 0.8rem;
+  font-weight: 600;
+  border: 1px solid var(--color-border);
+  background: var(--color-card-bg);
+  color: var(--color-text-secondary);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.announcement-tab-btn:hover {
+  border-color: var(--color-primary);
+  color: var(--color-primary);
+}
+
+.announcement-tab-btn.active {
+  background: var(--color-primary);
+  color: #fff;
+  border-color: var(--color-primary);
+}

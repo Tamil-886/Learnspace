@@ -184,7 +184,7 @@ main {
 .dashboard-content,
 .dashboard-body {
   flex: 1;
-  padding: var(--spacing-8);
+  padding: 20px var(--spacing-6);
   max-width: var(--container-wide-width);
   width: 100%;
   margin: 0 auto;
