@@ -310,6 +310,21 @@
 
 /* Extra Small Devices (361px - 480px) */
 @media (max-width: 480px) {
+  .page-banner {
+    padding: 2.75rem 0;
+  }
+  .page-banner-title {
+    font-size: 1.65rem;
+    line-height: 1.25;
+  }
+  .page-banner-desc {
+    font-size: 0.95rem;
+    line-height: 1.55;
+  }
+  .page-banner .breadcrumb-trail {
+    flex-wrap: wrap;
+    font-size: 0.8rem;
+  }
   .hero-floating-card {
     display: none;
   }

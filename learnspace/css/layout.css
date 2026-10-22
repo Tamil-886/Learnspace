@@ -15,36 +15,54 @@ main {
 
 /* Page Hero Banner (for subpages) */
 .page-banner {
-  background: linear-gradient(135deg, var(--color-navy) 0%, #1E293B 100%);
+  background-color: var(--color-navy);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   color: var(--color-white);
   padding: var(--spacing-16) 0;
   position: relative;
   overflow: hidden;
-  border-bottom: 1px solid var(--color-border);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   display: flex;
   align-items: center;
 }
 
 [data-theme="dark"] .page-banner {
-  background: linear-gradient(135deg, #0B1120 0%, #0F172A 100%);
   border-bottom-color: #334155;
 }
 
+/* Contrast Overlay for 100% WCAG AAA Text Readability */
+.page-banner::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(15, 23, 42, 0.90) 0%, rgba(15, 23, 42, 0.82) 50%, rgba(30, 41, 59, 0.88) 100%);
+  z-index: 1;
+  pointer-events: none;
+}
+
+[data-theme="dark"] .page-banner::after {
+  background: linear-gradient(135deg, rgba(11, 17, 32, 0.94) 0%, rgba(15, 23, 42, 0.88) 50%, rgba(11, 17, 32, 0.94) 100%);
+}
+
+/* Ambient Radial Glow */
 .page-banner::before {
   content: '';
   position: absolute;
-  top: -50%;
-  right: -20%;
+  top: -40%;
+  right: -15%;
   width: 600px;
   height: 600px;
   border-radius: 50%;
-  background: radial-gradient(circle, rgba(37, 99, 235, 0.18) 0%, rgba(37, 99, 235, 0) 70%);
+  background: radial-gradient(circle, rgba(37, 99, 235, 0.22) 0%, rgba(37, 99, 235, 0) 70%);
+  z-index: 2;
   pointer-events: none;
 }
 
 .page-banner-content {
   position: relative;
-  z-index: 2;
+  z-index: 3;
   max-width: 820px;
 }
 
@@ -54,6 +72,7 @@ main {
   color: var(--color-white);
   margin-bottom: var(--spacing-3);
   letter-spacing: -0.5px;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.45);
 }
 
 .page-banner-desc {
@@ -61,6 +80,150 @@ main {
   color: #CBD5E1;
   line-height: var(--line-height-relaxed);
   margin-bottom: var(--spacing-4);
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.35);
+}
+
+/* ======================================================== */
+/* Page-Specific Hero Banner Background Designs            */
+/* ======================================================== */
+.page-banner-about {
+  background-image: url('../assets/images/hero/hero-about.jpg');
+}
+.page-banner-about::before {
+  background: radial-gradient(circle, rgba(59, 130, 246, 0.25) 0%, rgba(245, 158, 11, 0.14) 50%, transparent 70%);
+}
+
+.page-banner-how-it-works {
+  background-image: url('../assets/images/community/parent-planning.jpg');
+}
+.page-banner-how-it-works::before {
+  background: radial-gradient(circle, rgba(14, 165, 233, 0.25) 0%, rgba(37, 99, 235, 0.15) 50%, transparent 70%);
+}
+
+.page-banner-classes {
+  background-image: url('../assets/images/classes/holistic-learning.jpg');
+}
+.page-banner-classes::before {
+  background: radial-gradient(circle, rgba(37, 99, 235, 0.28) 0%, rgba(99, 102, 241, 0.15) 50%, transparent 70%);
+}
+
+.page-banner-class-categories {
+  background-image: url('../assets/images/classes/science-lab.jpg');
+}
+.page-banner-class-categories::before {
+  background: radial-gradient(circle, rgba(99, 102, 241, 0.26) 0%, transparent 70%);
+}
+
+.page-banner-class-details {
+  background-image: url('../assets/images/classes/astronomy-space.jpg');
+}
+.page-banner-class-details::before {
+  background: radial-gradient(circle, rgba(37, 99, 235, 0.25) 0%, transparent 70%);
+}
+
+.page-banner-instructors {
+  background-image: url('../assets/images/classes/studio-art.jpg');
+}
+.page-banner-instructors::before {
+  background: radial-gradient(circle, rgba(234, 88, 12, 0.18) 0%, rgba(37, 99, 235, 0.18) 50%, transparent 70%);
+}
+
+.page-banner-instructor-details {
+  background-image: url('../assets/images/classes/world-history.jpg');
+}
+.page-banner-instructor-details::before {
+  background: radial-gradient(circle, rgba(245, 158, 11, 0.22) 0%, transparent 70%);
+}
+
+.page-banner-resources {
+  background-image: url('../assets/images/resources/curriculum-guide.jpg');
+}
+.page-banner-resources::before {
+  background: radial-gradient(circle, rgba(16, 185, 129, 0.24) 0%, rgba(14, 165, 233, 0.15) 50%, transparent 70%);
+}
+
+.page-banner-resource-details {
+  background-image: url('../assets/images/resources/unit-study.jpg');
+}
+.page-banner-resource-details::before {
+  background: radial-gradient(circle, rgba(20, 184, 166, 0.22) 0%, transparent 70%);
+}
+
+.page-banner-membership {
+  background-image: url('../assets/images/community/family-journey.jpg');
+}
+.page-banner-membership::before {
+  background: radial-gradient(circle, rgba(59, 130, 246, 0.25) 0%, rgba(245, 158, 11, 0.14) 50%, transparent 70%);
+}
+
+.page-banner-community {
+  background-image: url('../assets/images/community/co-op-gathering.jpg');
+}
+.page-banner-community::before {
+  background: radial-gradient(circle, rgba(37, 99, 235, 0.28) 0%, rgba(245, 158, 11, 0.12) 50%, transparent 70%);
+}
+
+.page-banner-events {
+  background-image: url('../assets/images/events/annual-stem-expo.jpg');
+}
+.page-banner-events::before {
+  background: radial-gradient(circle, rgba(234, 88, 12, 0.22) 0%, rgba(37, 99, 235, 0.18) 50%, transparent 70%);
+}
+
+.page-banner-event-details {
+  background-image: url('../assets/images/events/autumn-park-day.jpg');
+}
+.page-banner-event-details::before {
+  background: radial-gradient(circle, rgba(245, 158, 11, 0.22) 0%, transparent 70%);
+}
+
+.page-banner-blog {
+  background-image: url('../assets/images/blog/homeschool-planning.jpg');
+}
+.page-banner-blog::before {
+  background: radial-gradient(circle, rgba(59, 130, 246, 0.22) 0%, rgba(245, 158, 11, 0.12) 50%, transparent 70%);
+}
+
+.page-banner-blog-details {
+  background-image: url('../assets/images/blog/nature-journaling.jpg');
+}
+.page-banner-blog-details::before {
+  background: radial-gradient(circle, rgba(16, 185, 129, 0.2) 0%, transparent 70%);
+}
+
+.page-banner-testimonials {
+  background-image: url('../assets/images/community/family-journey.jpg');
+}
+.page-banner-testimonials::before {
+  background: radial-gradient(circle, rgba(236, 72, 153, 0.18) 0%, rgba(59, 130, 246, 0.18) 50%, transparent 70%);
+}
+
+.page-banner-faq {
+  background-image: url('../assets/images/community/parent-planning.jpg');
+}
+.page-banner-faq::before {
+  background: radial-gradient(circle, rgba(14, 165, 233, 0.22) 0%, transparent 70%);
+}
+
+.page-banner-contact {
+  background-image: url('../assets/images/community/co-op-gathering.jpg');
+}
+.page-banner-contact::before {
+  background: radial-gradient(circle, rgba(37, 99, 235, 0.24) 0%, rgba(245, 158, 11, 0.14) 50%, transparent 70%);
+}
+
+.page-banner-gallery {
+  background-image: url('../assets/images/community/science-fair.jpg');
+}
+.page-banner-gallery::before {
+  background: radial-gradient(circle, rgba(168, 85, 247, 0.24) 0%, rgba(59, 130, 246, 0.18) 50%, transparent 70%);
+}
+
+.page-banner-legal {
+  background-image: url('../assets/images/classes/constitutional-civics.jpg');
+}
+.page-banner-legal::before {
+  background: radial-gradient(circle, rgba(100, 116, 139, 0.25) 0%, transparent 70%);
 }
 
 /* Page Banner Breadcrumbs - Always High-Contrast in Light & Dark Modes */
