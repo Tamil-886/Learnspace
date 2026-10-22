@@ -128,7 +128,8 @@
     min-height: 4.1rem;
   }
   .instructor-badges {
-    min-height: 4.2rem;
+    min-height: 3.4rem;
+    gap: 5px;
   }
 
   /* Values Grid - Guiding Principles alignment for 1024px */
@@ -199,8 +200,8 @@
     min-height: 4.2rem;
   }
   .instructor-badges {
-    min-height: 4.2rem;
-    gap: 4px;
+    min-height: 3.4rem;
+    gap: 5px;
   }
 
   /* Values Grid - Guiding Principles alignment for 768px - 912px */

@@ -168,7 +168,7 @@ const INSTRUCTORS_DATA = [
     experience: "12+ Years",
     rating: 4.94,
     reviewCount: 57,
-    subjects: ["Competition Mathematics (AMC 8/10)", "Pre-Algebra & Algebra I/II", "Living Math & Origami Geometry", "Formal Deductive Logic", "Discrete Mathematics & Number Theory"],
+    subjects: ["Competition Mathematics", "Pre-Algebra & Algebra", "Origami Geometry", "Formal Deductive Logic", "Discrete Mathematics"],
     shortBio: "Math Olympiad coach specializing in AMC 8 competitions, combinatorics, and making non-routine problem solving joyful.",
     bio: [
       "David Park earned his Master of Education in Secondary Mathematics from Johns Hopkins University and has spent over a decade teaching advanced mathematics and coaching competition teams. A homeschool dad himself, David discovered early on that conventional drill-and-kill worksheets stifle mathematical intuition.",
@@ -215,7 +215,7 @@ const INSTRUCTORS_DATA = [
     experience: "11+ Years",
     rating: 4.96,
     reviewCount: 43,
-    subjects: ["Creative Writing & Fiction Workshop", "Socratic Literary Seminars", "Poetry & Expressive Arts", "Expository Essay Writing", "Young Adult Literature"],
+    subjects: ["Creative Writing", "Socratic Literary Seminars", "Poetry & Expressive Arts", "Expository Essay Writing", "Young Adult Literature"],
     shortBio: "Published YA novelist and workshop mentor. Guides young writers to discover their true authorial voices in collaborative circles.",
     bio: [
       "Aisha Patel is a published young-adult author, essayist, and Pushcart Prize nominee with a Master of Arts in Creative Writing and English Literature from Columbia University. She has conducted youth writing workshops, poetry masterclasses, and author residencies in community centers and libraries nationwide.",
@@ -262,7 +262,7 @@ const INSTRUCTORS_DATA = [
     experience: "18+ Years",
     rating: 4.99,
     reviewCount: 71,
-    subjects: ["Ancient Civilizations & Classical Antiquity", "Living History & Reenactment", "Constitutional Law & Mock Trial", "Speech, Forensics & Debate", "Classical Latin & Etymology", "Experimental Archaeology"],
+    subjects: ["Ancient Civilizations", "Living History Reenactment", "Constitutional Law", "Speech & Debate", "Classical Latin", "Experimental Archaeology"],
     shortBio: "Oxford graduate and father of 4 homeschooled collegiate scholars. Leads Socratic mock trials and ancient history reenactments.",
     bio: [
       "Robert Jenkins holds an M.A. in European History and Classical Studies from Oxford University and has devoted over eighteen years to classical humanities education. Having homeschooled all four of his own children from kindergarten through high school graduation (each now collegiate scholars in engineering, law, and classics), Robert embodies the veteran homeschool spirit.",
