@@ -34,38 +34,38 @@ function renderInstructorsDirectory(gridEl) {
     const avatarSrc = window.getAssetPath ? window.getAssetPath(inst.avatar) : inst.avatar;
     const detailLink = `instructor-details.html?id=${inst.id}`;
     const subjectBadges = inst.subjects.slice(0, 3).map(s => `
-      <span class="badge badge-secondary" style="font-size: 0.7rem; padding: 2px 7px; margin: 2px 2px;">${s}</span>
+      <span class="badge badge-secondary">${s}</span>
     `).join('');
 
     return `
-      <div class="instructor-card animate-fade-in" style="display: flex; flex-direction: column; height: 100%;">
-        <div class="instructor-avatar-wrap" style="position: relative;">
-          <img src="${avatarSrc}" alt="${inst.name}" loading="lazy" style="width: 100%; height: 260px; object-fit: cover;" />
-          <span class="badge badge-primary" style="position: absolute; bottom: 12px; right: 12px; font-size: 0.72rem; box-shadow: 0 2px 4px rgba(0,0,0,0.25);">
-            ${inst.experience} Exp
-          </span>
-        </div>
-        <div class="instructor-card-body" style="display: flex; flex-direction: column; flex: 1; padding: 22px;">
-          <div style="font-size: 0.78rem; font-weight: 600; color: var(--color-primary); text-transform: uppercase; letter-spacing: 0.04em; margin-bottom: 4px;">
-            ${inst.title}
+      <div class="instructor-card animate-fade-in">
+        <div class="instructor-avatar-wrap">
+          <div class="instructor-avatar-inner">
+            <img src="${avatarSrc}" alt="${inst.name}" loading="lazy" class="instructor-avatar-img" />
+            <span class="badge badge-primary instructor-exp-badge">
+              ${inst.experience} Exp
+            </span>
           </div>
-          <h3 class="instructor-name" style="margin-bottom: 8px;">
-            <a href="${detailLink}" style="color: var(--color-text-main); text-decoration: none;">${inst.name}</a>
+        </div>
+        <div class="instructor-card-body">
+          <div class="instructor-role">${inst.title}</div>
+          <h3 class="instructor-name">
+            <a href="${detailLink}">${inst.name}</a>
           </h3>
-          <p class="instructor-bio" style="font-size: 0.85rem; line-height: 1.55; color: var(--color-text-secondary); margin-bottom: 14px; flex: 1;">
+          <p class="instructor-bio">
             ${inst.shortBio || (inst.bio && inst.bio[0])}
           </p>
 
-          <div style="display: flex; flex-wrap: wrap; gap: 4px; margin-bottom: 14px;">
+          <div class="instructor-badges">
             ${subjectBadges}
           </div>
 
-          <div style="display: flex; justify-content: space-between; align-items: center; font-size: 0.78rem; color: var(--color-text-muted); border-top: 1px solid var(--color-border); padding-top: 12px; margin-bottom: 16px;">
-            <span>★ <strong>${inst.rating}</strong> (${inst.reviewCount} Reviews)</span>
-            <span>📍 ${inst.desk ? inst.desk.split('Room')[0].trim() : 'Campus'}</span>
+          <div class="instructor-meta">
+            <span class="instructor-rating">★ <strong>${inst.rating}</strong> (${inst.reviewCount} Reviews)</span>
+            <span class="instructor-desk" title="${inst.desk || 'Oakwood Co-Op Campus'}">📍 ${inst.desk ? inst.desk.split('Room')[0].trim() : 'Campus'}</span>
           </div>
 
-          <a href="${detailLink}" class="btn btn-outline btn-sm btn-block" style="margin-top: auto;">
+          <a href="${detailLink}" class="btn btn-outline btn-sm btn-block instructor-btn">
             View Full Profile
           </a>
         </div>
