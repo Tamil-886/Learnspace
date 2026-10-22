@@ -23,8 +23,8 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     // Normalize href
-    const cleanHref = href.split('/').pop().toLowerCase();
-    const cleanCurrent = currentPath.split('/').pop().toLowerCase() || 'index.html';
+    const cleanHref = href.split('/').pop().split('#')[0].split('?')[0].toLowerCase();
+    const cleanCurrent = currentPath.split('/').pop().split('#')[0].split('?')[0].toLowerCase() || 'index.html';
 
     if (cleanHref === cleanCurrent || (cleanHref === 'index.html' && cleanCurrent === '')) {
       link.classList.add('active');
