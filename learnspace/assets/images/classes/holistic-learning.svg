@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <defs>
+    <linearGradient id="bgGrad_hl" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0D9488"/>
+      <stop offset="50%" stop-color="#0F172A"/>
+      <stop offset="100%" stop-color="#020617"/>
+    </linearGradient>
+    <linearGradient id="glow_hl" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#14B8A6" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#2DD4BF" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  
+  <rect width="800" height="500" fill="url(#bgGrad_hl)"/>
+  <circle cx="400" cy="220" r="180" fill="url(#glow_hl)"/>
+  <circle cx="680" cy="120" r="100" fill="#14B8A6" opacity="0.1"/>
+  
+  <!-- Content Card overlay -->
+  <g transform="translate(150, 80)">
+    <rect x="0" y="0" width="500" height="320" rx="24" fill="#0F172A" fill-opacity="0.75" stroke="#14B8A6" stroke-width="2"/>
+    <text x="250" y="70" font-family="'Inter', sans-serif" font-size="28" font-weight="800" fill="#FFFFFF" text-anchor="middle">Holistic Inquiry & Discovery</text>
+    <text x="250" y="105" font-family="'Inter', sans-serif" font-size="16" font-weight="500" fill="#2DD4BF" text-anchor="middle">Multi-Age Collaborative Homeschool Tracks</text>
+    <line x1="80" y1="135" x2="420" y2="135" stroke="#334155" stroke-width="2"/>
+    
+    <!-- Icons / Subjects row -->
+    <g transform="translate(60, 160)">
+      <circle cx="40" cy="40" r="32" fill="#0D9488" fill-opacity="0.3"/>
+      <text x="40" y="47" font-size="22" text-anchor="middle">🔬</text>
+      <text x="40" y="90" font-family="'Inter', sans-serif" font-size="13" font-weight="600" fill="#E2E8F0" text-anchor="middle">Science Lab</text>
+    </g>
+    <g transform="translate(160, 160)">
+      <circle cx="40" cy="40" r="32" fill="#2563EB" fill-opacity="0.3"/>
+      <text x="40" y="47" font-size="22" text-anchor="middle">📐</text>
+      <text x="40" y="90" font-family="'Inter', sans-serif" font-size="13" font-weight="600" fill="#E2E8F0" text-anchor="middle">Mathematics</text>
+    </g>
+    <g transform="translate(260, 160)">
+      <circle cx="40" cy="40" r="32" fill="#D97706" fill-opacity="0.3"/>
+      <text x="40" y="47" font-size="22" text-anchor="middle">🎨</text>
+      <text x="40" y="90" font-family="'Inter', sans-serif" font-size="13" font-weight="600" fill="#E2E8F0" text-anchor="middle">Fine Arts</text>
+    </g>
+    <g transform="translate(360, 160)">
+      <circle cx="40" cy="40" r="32" fill="#059669" fill-opacity="0.3"/>
+      <text x="40" y="47" font-size="22" text-anchor="middle">🌿</text>
+      <text x="40" y="90" font-family="'Inter', sans-serif" font-size="13" font-weight="600" fill="#E2E8F0" text-anchor="middle">Nature Study</text>
+    </g>
+  </g>
+</svg>

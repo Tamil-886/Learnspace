@@ -222,9 +222,9 @@ const BLOG_POSTS_DATA = [
     date: "October 04, 2026",
     readTime: "8 min read",
     author: {
-      name: "Dr. Sarah Chen, Ph.D.",
-      role: "Lead STEM Educator",
-      avatar: "assets/images/instructors/dr-sarah-chen.jpg"
+      name: "David Park, M.Ed.",
+      role: "Mathematics & Logic Specialist",
+      avatar: "assets/images/instructors/david-park.jpg"
     },
     image: "assets/images/blog/science-lab.jpg",
     featured: true,
@@ -261,9 +261,9 @@ const BLOG_POSTS_DATA = [
     date: "September 28, 2026",
     readTime: "5 min read",
     author: {
-      name: "Robert Jenkins, M.A.",
-      role: "High School Advisor & Naturalist",
-      avatar: "assets/images/instructors/robert-jenkins.jpg"
+      name: "Marcus Vance, B.S.",
+      role: "Maker Lab Director & Naturalist",
+      avatar: "assets/images/instructors/marcus-vance.jpg"
     },
     image: "assets/images/blog/nature-journaling.jpg",
     featured: true,
