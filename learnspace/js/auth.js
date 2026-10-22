@@ -116,6 +116,43 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
+  // 3b. Social Login Handlers (Google & Apple)
+  const googleBtn = document.getElementById('btn-google-login');
+  const appleBtn = document.getElementById('btn-apple-login');
+
+  function triggerSocialLogin(provider) {
+    if (loginBanner) {
+      loginBanner.className = 'auth-banner auth-banner-success visible';
+      loginBanner.innerHTML = `
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+          <polyline points="22 4 12 14.01 9 11.01"></polyline>
+        </svg>
+        <div>
+          <strong>Signed in with ${provider} successfully!</strong>
+          <p style="margin: 2px 0 0 0; font-size: 0.825rem; font-weight: normal; opacity: 0.95;">
+            Welcome back to LearnSpace Co-op. You may now continue exploring or open the <a href="../dashboard/index.html" style="text-decoration: underline; font-weight: bold; color: inherit;">Parent Dashboard</a> at your convenience.
+          </p>
+        </div>
+      `;
+    }
+
+    localStorage.setItem('learnspace_logged_in', 'true');
+    localStorage.setItem('learnspace_auth_provider', provider);
+  }
+
+  if (googleBtn) {
+    googleBtn.addEventListener('click', function () {
+      triggerSocialLogin('Google');
+    });
+  }
+
+  if (appleBtn) {
+    appleBtn.addEventListener('click', function () {
+      triggerSocialLogin('Apple');
+    });
+  }
+
   // 4. Registration Form Handler
   const registerForm = document.getElementById('register-form');
   const registerBanner = document.getElementById('register-feedback-banner');

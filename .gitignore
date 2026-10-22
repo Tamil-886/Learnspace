@@ -22,3 +22,5 @@ yarn-error.log*
 # Test logs & scratch files
 scratch/
 *.log
+
+.vercel
