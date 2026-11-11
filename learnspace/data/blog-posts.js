@@ -291,6 +291,45 @@ const BLOG_POSTS_DATA = [
         text: "The companion tree exercise is brilliant. Our art students gained so much confidence from sketching the same specimen across seasons."
       }
     ]
+  },
+  {
+    id: "socratic-discussion-circle",
+    title: "The Art of Socratic Seminar: Cultivating Civil Discourse in Co-Op Literature",
+    slug: "art-of-socratic-seminar-civil-discourse-co-op-literature",
+    category: "Literature",
+    date: "September 15, 2026",
+    readTime: "6 min read",
+    author: {
+      name: "Robert Jenkins, M.Ed.",
+      role: "Classical Literature & Speech Lead",
+      avatar: "assets/images/instructors/robert-jenkins.jpg"
+    },
+    image: "assets/images/classes/socratic-literature.jpg",
+    featured: true,
+    excerpt: "How guided inquiry questions and open-ended Socratic dialogue help homeschool students formulate persuasive arguments and listen with empathy.",
+    tags: ["Literature", "Humanities", "Socratic Method", "Critical Thinking"],
+    content: `
+      <h2>Beyond Reading Comprehension Worksheets</h2>
+      <p>True literary analysis is never about memorizing plot points or filling out multiple-choice worksheets. In our co-op literature seminars, we sit in a shared circle where the instructor acts as a facilitator rather than a lecturer, posing open-ended questions that challenge learners to examine character motivations, philosophical dilemmas, and the timeless truths of classical literature.</p>
+
+      <h2>Key Pillars of a Fruitful Socratic Seminar</h2>
+      <ul>
+        <li><strong>Text-Based Evidence:</strong> Every opinion must be anchored by citing specific passages, dialogue, or poetic meters.</li>
+        <li><strong>Active Listening Habit:</strong> Students practice restating a peer's premise respectfully before articulating an alternative thesis.</li>
+        <li><strong>Constructive Disagreement:</strong> Disagreeing with an idea while honoring the speaker builds diplomatic maturity and rhetorical poise.</li>
+        <li><strong>The Socratic Questioning Tool:</strong> Asking 'Why did the protagonist make that choice?' rather than 'What happened next?'</li>
+      </ul>
+
+      <h2>Bringing Socratic Circles into the Homeschool Routine</h2>
+      <p>You don't need a formal seminar hall to cultivate Socratic inquiry. Begin at the family dinner table or in a small co-op book club of four to six learners. Choose high-caliber living books—from C.S. Lewis and Homer to Harper Lee—and watch your learners transform from passive consumers of text into vibrant, independent thinkers.</p>
+    `,
+    comments: [
+      {
+        author: "Aisha Patel",
+        date: "September 16, 2026",
+        text: "The shift from debate competition to collaborative Socratic dialogue has completely opened up our high school reading cohort."
+      }
+    ]
   }
 ];
 
