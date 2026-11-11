@@ -26,6 +26,7 @@
 /* Tablet Landscape & Medium Screens (913px - 1024px) */
 @media (max-width: 1024px) {
   .navbar-nav,
+  .navbar-actions .btn,
   .navbar-actions .btn-nav-auth {
     display: none;
   }

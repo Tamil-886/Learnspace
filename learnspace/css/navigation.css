@@ -144,6 +144,22 @@
   gap: var(--spacing-3);
 }
 
+/* Maintain identical height and corner radius for Theme button, RTL button, and CTA / Auth buttons */
+.navbar-actions .btn,
+.navbar-actions .btn-nav-auth {
+  height: 38px;
+  min-height: 38px;
+  padding: 0 1.15rem;
+  border-radius: var(--radius-md) !important;
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-semibold);
+  line-height: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
 .icon-btn {
   display: inline-flex;
   align-items: center;
