@@ -236,6 +236,7 @@
   
   .story-grid {
     grid-template-columns: 1fr;
+    gap: var(--spacing-6);
   }
 
   .dashboard-sidebar {
@@ -280,6 +281,11 @@
 
 /* Mobile Large & Small Tablets (577px - 768px) */
 @media (max-width: 768px) {
+  .contact-form-card,
+  .contact-info-card {
+    padding: var(--spacing-6);
+  }
+
   :root {
     --navbar-height: 64px;
     --spacing-16: 3rem;
@@ -529,6 +535,27 @@
 
 /* Extra Small Devices (361px - 480px) */
 @media (max-width: 480px) {
+  .contact-form-card,
+  .contact-info-card {
+    padding: var(--spacing-4);
+  }
+  .contact-card-title {
+    font-size: 1.35rem;
+  }
+  .cta-banner-box {
+    padding: 32px 18px;
+    margin-top: 36px;
+    border-radius: var(--radius-xl);
+  }
+  .cta-banner-title {
+    font-size: 1.5rem;
+  }
+  .cta-banner-desc {
+    font-size: 0.95rem;
+    line-height: 1.55;
+    margin-bottom: 24px;
+  }
+
   .page-banner {
     padding: 2.75rem 0;
   }
@@ -612,6 +639,28 @@
 
 /* Very Small Devices (320px - 360px) */
 @media (max-width: 360px) {
+  .contact-form-card,
+  .contact-info-card {
+    padding: 16px 12px;
+  }
+  .contact-card-title {
+    font-size: 1.25rem;
+  }
+  .contact-card-desc {
+    font-size: 0.85rem;
+    line-height: 1.45;
+  }
+  .cta-banner-box {
+    padding: 24px 12px;
+    border-radius: var(--radius-lg);
+  }
+  .cta-banner-title {
+    font-size: 1.25rem;
+  }
+  .btn {
+    white-space: normal;
+  }
+
   .hero-title {
     font-size: clamp(1.4rem, 6.5vw, 1.75rem);
   }
