@@ -448,7 +448,10 @@
   color: var(--color-primary);
   background: var(--color-primary-light);
   border-radius: var(--radius-md);
-  white-space: nowrap;
+  white-space: normal;
+  max-width: 100%;
+  word-break: break-word;
+  line-height: 1.35;
 }
 
 .dash-schedule-details {
@@ -604,22 +607,184 @@
 @media (max-width: 1024px) {
   .dashboard-metrics-grid {
     grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
   }
   .dash-main-grid {
     grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .dashboard-metrics-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+    margin-bottom: 20px;
+  }
+  .metric-card {
+    padding: 16px 18px;
+    gap: 14px;
+  }
+  .dash-welcome-card {
+    padding: 20px 22px;
+    gap: 16px;
+    margin-bottom: 20px;
+  }
+  .dash-welcome-title {
+    font-size: 1.35rem;
+  }
+  .dash-main-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    margin-bottom: 24px;
   }
 }
 
 @media (max-width: 640px) {
+  .dash-welcome-card {
+    padding: 18px 16px;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 14px;
+  }
+  .dash-welcome-left {
+    min-width: 0;
+    width: 100%;
+  }
+  .dash-welcome-title {
+    font-size: 1.25rem;
+  }
+  .dash-welcome-subtitle {
+    font-size: 0.84rem;
+  }
+  .dash-welcome-actions {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  .dash-welcome-actions .btn {
+    width: 100%;
+    justify-content: center;
+  }
   .dashboard-metrics-grid {
     grid-template-columns: 1fr;
+    gap: 12px;
   }
-  .dash-welcome-card {
-    flex-direction: column;
-    align-items: flex-start;
+  .metric-card {
+    padding: 14px 16px;
+    gap: 12px;
   }
   .dash-quick-shortcuts-grid {
     grid-template-columns: 1fr;
+    gap: 8px;
+  }
+  .dash-schedule-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    padding: 12px 6px;
+  }
+  .dash-schedule-details {
+    width: 100%;
+    min-width: 0;
+  }
+  .dash-schedule-title {
+    font-size: 0.9rem;
+    word-break: break-word;
+  }
+  .dash-child-item {
+    padding: 12px 6px;
+    gap: 10px;
+  }
+  .dash-child-info {
+    min-width: 0;
+    flex: 1;
+  }
+  .dash-child-name {
+    font-size: 0.9rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .dash-child-right {
+    flex-shrink: 0;
+  }
+  .dash-notice-item {
+    padding: 12px 6px;
+  }
+  .dash-notice-title {
+    font-size: 0.9rem;
+    word-break: break-word;
+  }
+  .dash-notice-body {
+    font-size: 0.825rem;
+    word-break: break-word;
+  }
+}
+
+@media (max-width: 360px) {
+  .dash-welcome-card {
+    padding: 14px 12px;
+    gap: 12px;
+    border-radius: var(--radius-xl);
+  }
+  .dash-welcome-title {
+    font-size: 1.15rem;
+  }
+  .dash-welcome-subtitle {
+    font-size: 0.78rem;
+  }
+  .metric-card {
+    padding: 12px 12px;
+    gap: 10px;
+  }
+  .metric-icon-box {
+    width: 42px;
+    height: 42px;
+  }
+  .metric-number {
+    font-size: 1.35rem;
+  }
+  .dash-card-header {
+    padding: 12px 12px;
+  }
+  .dash-card-title {
+    font-size: 0.95rem;
+  }
+  .dash-card-sub {
+    font-size: 0.74rem;
+  }
+  .dash-card-body {
+    padding: 4px 10px;
+  }
+  .dash-shortcut-tile {
+    padding: 10px 10px;
+    gap: 8px;
+  }
+  .dash-shortcut-icon {
+    width: 34px;
+    height: 34px;
+  }
+  .dash-shortcut-text strong {
+    font-size: 0.8rem;
+  }
+  .dash-shortcut-text span {
+    font-size: 0.68rem;
+  }
+  .dash-child-item {
+    padding: 8px 2px;
+    gap: 6px;
+  }
+  .dash-child-avatar {
+    width: 34px;
+    height: 34px;
+  }
+  .dash-child-name {
+    font-size: 0.85rem;
+  }
+  .dash-schedule-item {
+    padding: 10px 2px;
   }
 }
 

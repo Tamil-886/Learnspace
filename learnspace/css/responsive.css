@@ -322,11 +322,23 @@
   }
   
   .dashboard-metrics-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
   }
   
   .children-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--spacing-4);
+  }
+
+  .dashboard-topbar,
+  .dashboard-header {
+    padding: 0 var(--spacing-4);
+  }
+
+  .dashboard-content,
+  .dashboard-body {
+    padding: 20px var(--spacing-4);
   }
   
   .footer-top-newsletter {
@@ -524,12 +536,23 @@
     font-size: var(--font-size-xl);
   }
 
-  .dashboard-content {
-    padding: var(--spacing-4);
+  .children-grid {
+    grid-template-columns: 1fr;
   }
 
-  .dashboard-topbar {
-    padding: 0 var(--spacing-4);
+  .dashboard-metrics-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .dashboard-content,
+  .dashboard-body {
+    padding: 16px var(--spacing-3);
+  }
+
+  .dashboard-topbar,
+  .dashboard-header {
+    padding: 0 var(--spacing-3);
   }
 }
 
@@ -597,24 +620,47 @@
   .dashboard-header {
     height: auto;
     min-height: 56px;
-    padding: var(--spacing-2) var(--spacing-3);
+    padding: 8px var(--spacing-3);
     gap: 8px;
+  }
+  .dashboard-topbar > div:first-child,
+  .dashboard-header > div:first-child {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    min-width: 0;
+    flex: 1 1 auto;
+    overflow: hidden;
+  }
+  .dashboard-topbar > div:last-child,
+  .dashboard-header > div:last-child,
+  .dashboard-header-actions {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    flex-shrink: 0;
+  }
+  .topbar-page-info {
+    min-width: 0;
+    flex: 1 1 auto;
+    overflow: hidden;
   }
   .topbar-subtitle {
     display: none;
   }
   .topbar-title,
   .dashboard-page-title {
-    font-size: 1rem;
+    font-size: 0.95rem !important;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    max-width: 140px;
+    min-width: 0;
+    max-width: 130px;
+    line-height: 1.25;
   }
-  .dashboard-header-actions {
-    gap: 6px;
-  }
-  .dashboard-header-actions .btn {
+  .dashboard-header-actions .btn,
+  .dashboard-topbar > div:last-child .btn,
+  .dashboard-topbar > div:first-child .btn {
     padding: 5px 9px;
     font-size: 0.75rem;
   }
@@ -623,7 +669,9 @@
   .dashboard-topbar .dir-toggle-btn {
     width: 32px;
     height: 32px;
+    min-width: 32px;
     padding: 0;
+    font-size: 0.75rem;
   }
   .modal-dialog,
   .modal-content {
@@ -686,6 +734,50 @@
     width: 34px;
     height: 42px;
     font-size: 1.05rem;
+  }
+
+  .dashboard-content,
+  .dashboard-body {
+    padding: 12px 8px;
+  }
+  .dashboard-topbar,
+  .dashboard-header {
+    padding: 6px 8px;
+    gap: 6px;
+  }
+  .dashboard-topbar > div:first-child,
+  .dashboard-header > div:first-child {
+    gap: 6px;
+  }
+  .dashboard-topbar > div:last-child,
+  .dashboard-header > div:last-child,
+  .dashboard-header-actions {
+    gap: 4px;
+  }
+  .topbar-title,
+  .dashboard-page-title {
+    font-size: 0.85rem !important;
+    max-width: 95px;
+  }
+  .dashboard-sidebar-toggle {
+    padding: 4px;
+  }
+  .dashboard-sidebar-toggle svg {
+    width: 20px;
+    height: 20px;
+  }
+  .dashboard-topbar .theme-toggle-btn,
+  .dashboard-topbar .dir-toggle-btn {
+    width: 30px;
+    height: 30px;
+    min-width: 30px;
+    font-size: 0.7rem;
+  }
+  .dashboard-header-actions .btn,
+  .dashboard-topbar > div:last-child .btn,
+  .dashboard-topbar > div:first-child .btn {
+    padding: 4px 7px;
+    font-size: 0.72rem;
   }
 }
 
