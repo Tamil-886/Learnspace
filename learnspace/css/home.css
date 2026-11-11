@@ -219,7 +219,7 @@
   display: inline-flex;
   align-items: center;
   background: var(--color-card-bg);
-  color: var(--color-text-main);
+  color: var(--color-text-main) !important;
   border: 1.5px solid var(--color-border);
   font-weight: 600;
   padding: 0.875rem 1.75rem;
@@ -228,11 +228,33 @@
   transition: all 0.25s ease;
 }
 
+.hero-btn-outline span {
+  color: inherit !important;
+}
+
 .hero-btn-outline:hover {
-  border-color: #2563EB;
-  color: #2563EB;
-  background: rgba(37, 99, 235, 0.06);
+  border-color: #2563EB !important;
+  color: #1D4ED8 !important;
+  background: #EFF6FF !important;
+  box-shadow: 0 4px 14px rgba(37, 99, 235, 0.16);
   transform: translateY(-2px);
+}
+
+.hero-btn-outline:hover span {
+  color: inherit !important;
+}
+
+[data-theme="dark"] .hero-btn-outline {
+  background: var(--color-card-bg);
+  color: var(--color-text-main) !important;
+  border-color: var(--color-border);
+}
+
+[data-theme="dark"] .hero-btn-outline:hover {
+  border-color: #60A5FA !important;
+  color: #93C5FD !important;
+  background: rgba(37, 99, 235, 0.18) !important;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.3);
 }
 
 /* Hero Media Showcase & Floating Cards */
